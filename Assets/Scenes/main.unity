@@ -649,9 +649,10 @@ GameObject:
   - component: {fileID: 895522887}
   - component: {fileID: 895522885}
   - component: {fileID: 895522884}
+  - component: {fileID: 895522886}
   m_Layer: 0
   m_Name: Chef
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -693,6 +694,137 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.22, y: 0.17567778}
   m_EdgeRadius: 0
+--- !u!114 &895522886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895522883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 8
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 339
+        y: 206
+        width: 150
+        height: 125
+      Text: Howdy! I'm a big dodo head
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 566
+        y: 214
+        width: 150
+        height: 125
+      Text: u gay?
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000000300000004000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 1259
+        y: 276
+        width: 150
+        height: 125
+      Text: end 2
+      Type: 2
+      NodeType: 2
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 745
+        y: 121
+        width: 150
+        height: 125
+      Text: 1
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 730
+        y: 364
+        width: 150
+        height: 125
+      Text: 2
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 890
+        y: 364
+        width: 150
+        height: 125
+      Text: end 3
+      Type: 0
+      NodeType: 2
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 954
+        y: 113
+        width: 150
+        height: 125
+      Text: u bad
+      Type: 0
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1137
+        y: 105
+        width: 150
+        height: 125
+      Text: end 1
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - interaction
 --- !u!95 &895522887
 Animator:
   serializedVersion: 3

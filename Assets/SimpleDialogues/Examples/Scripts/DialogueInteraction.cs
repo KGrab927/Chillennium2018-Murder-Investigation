@@ -6,7 +6,8 @@ public class DialogueInteraction : MonoBehaviour {
 	private bool nextEnd;
 	private Dialogues dialogues;
 	private bool showingText;
-    [SerializeField]
+	private Interactable interactable;
+	[SerializeField]
     Text dialogueText;
     [SerializeField]
     Text topText;
@@ -32,18 +33,24 @@ public class DialogueInteraction : MonoBehaviour {
 	{
 		dialogueUI.SetActive(false);
 		buttonContainer.SetActive(false);
+		dialogueContainer.SetActive(true);
 		active = false;
 		showingText = true;
+		FindObjectsOfType<PlayerController>()[0].EndInteract();
+		interactable.EndInteract();
 	}
 
 	public void StartInteraction(GameObject obj)
 	{
 		active = true;
-		Interactable interactable = obj.GetComponent<Interactable>();
+		interactable = obj.GetComponent<Interactable>();
 		portrait.GetComponent<Image>().sprite = interactable.portrait;
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
 		dialogues.SetTree("interaction");
+		dialogueText.text = dialogues.GetCurrentDialogue();
+		dialogueUI.SetActive(true);
+		
 	}
 	
 	public void ShowOther()
@@ -60,6 +67,10 @@ public class DialogueInteraction : MonoBehaviour {
 				bottomText.transform.parent.gameObject.SetActive(true);
 			else
 				bottomText.transform.parent.gameObject.SetActive(false);
+		}
+		else
+		{
+			dialogueText.text = dialogues.GetCurrentDialogue();
 		}
 
 		showingText = !showingText;
@@ -80,16 +91,19 @@ public class DialogueInteraction : MonoBehaviour {
 			{
 				ShowOther();
 			}
-			if (Input.GetKeyDown("Choice 1"))
+			if (Input.GetButtonDown("Choice 1"))
 			{
+				Debug.Log("Choice 1");
 				Choice(0);
 			}
-			else if (Input.GetKeyDown("Choice 2"))
+			else if (Input.GetButtonDown("Choice 2"))
 			{
+				Debug.Log("Choice 2");
 				Choice(1);
 			}
-			else if (Input.GetKeyDown("Choice 3"))
+			else if (Input.GetButtonDown("Choice 3"))
 			{
+				Debug.Log("Choice 3");
 				Choice(2);
 			}
 		}
@@ -99,11 +113,12 @@ public class DialogueInteraction : MonoBehaviour {
 			{
 				ShowOther();
 			}
-			if (Input.GetKeyDown("Interact"))
+			if (Input.GetButtonDown("Interact"))
 			{
-				if(!nextEnd)
+				if (!nextEnd)
 				{
 					dialogues.Next();
+					dialogueText.text = dialogues.GetCurrentDialogue();
 				}
 				else
 				{
@@ -115,9 +130,15 @@ public class DialogueInteraction : MonoBehaviour {
 
 	public void Choice(int index)
     {
-        if(index < dialogues.GetChoices().Length)
+		if (index < dialogues.GetChoices().Length)
 		{
-			dialogues.NextChoice(dialogues.GetChoices()[index]);
+			try
+			{
+				dialogues.NextChoice(dialogues.GetChoices()[index]);
+			} catch
+			{
+				Hide();
+			}
 		}
     }
 }

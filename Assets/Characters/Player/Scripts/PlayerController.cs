@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	[SerializeField]
-	int pickup_range;
+	float pickup_range;
 
 	[SerializeField]
 	DialogueInteraction dialogueInteraction;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		rb2d.freezeRotation = true;
-		isPerson = false;
+		isPerson = true;
 		interacting = false;
 		dir_x = 0;
 		dir_y = 0;
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
 		GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
 
 
-		if(Input.GetButton("Fire1") && isPerson && !interacting)
+		if(Input.GetButtonDown("Interact") && isPerson && !interacting)
 		{
 			GameObject closest = null;
 			float min_dist = pickup_range;
@@ -63,6 +63,8 @@ public class PlayerController : MonoBehaviour
 			{
 				Vector3 diff = i.transform.position - transform.position;
 				float dist = diff.magnitude;
+				Debug.Log(interactables.Length);
+				Debug.Log(dist < pickup_range);
 				if (dist < pickup_range && dist < min_dist)
 				{
 					if(diff.x > 0 && dir_x > 0 ||
@@ -79,8 +81,13 @@ public class PlayerController : MonoBehaviour
 			if (closest)
 			{
 				interacting = true;
-				dialogueInteraction.StartInteraction(closest);
+				Input.ResetInputAxes();
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
 			}
 		}
+	}
+	public void EndInteract()
+	{
+		interacting = false;
 	}
 }

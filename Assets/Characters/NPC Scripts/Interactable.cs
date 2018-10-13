@@ -7,10 +7,18 @@ public class Interactable : MonoBehaviour {
 
 	public void Interact()
 	{
-		NPCController controller = transform.parent.GetComponent<NPCController>();
+		NPCController controller = transform.GetComponent<NPCController>();
 		if(controller)
 		{
 			controller.interacting = true;
+		}
+	}
+	public void EndInteract()
+	{
+		NPCController controller = transform.GetComponent<NPCController>();
+		if (controller)
+		{
+			controller.interacting = false;
 		}
 	}
 }
