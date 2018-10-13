@@ -71,7 +71,6 @@ public class DialogueInteraction : MonoBehaviour {
         if (nextEnd == true)
         {
             dialogueUI.SetActive(false);
-            nextTreeButton.SetActive(true);
         }
         else
         {
