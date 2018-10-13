@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 591971246}
   m_Layer: 0
   m_Name: Dutchess
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_string: dutchess
   portrait: {fileID: 21300000, guid: 96d15bc39547370419f77fe78d4d2036, type: 3}
 --- !u!114 &591971247
 MonoBehaviour:
@@ -708,7 +709,7 @@ GameObject:
   - component: {fileID: 612579168}
   m_Layer: 0
   m_Name: Money
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -724,6 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_string: money
   portrait: {fileID: 21300000, guid: ac1a768d891b4a8419369b858f9729cc, type: 3}
 --- !u!114 &612579169
 MonoBehaviour:
@@ -1211,7 +1213,7 @@ GameObject:
   - component: {fileID: 895522890}
   m_Layer: 0
   m_Name: Chef
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1473,6 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_string: chef
   portrait: {fileID: 21300000, guid: b7f625508b24ac54793159fa54275f5a, type: 3}
 --- !u!1 &905281329
 GameObject:
@@ -2050,7 +2053,7 @@ GameObject:
   - component: {fileID: 1317867789}
   m_Layer: 0
   m_Name: Butler
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2066,6 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interaction_string: butler
   portrait: {fileID: 21300000, guid: 171d8c1afa3f9d049bd1ef6c280a7d61, type: 3}
 --- !u!114 &1317867790
 MonoBehaviour:

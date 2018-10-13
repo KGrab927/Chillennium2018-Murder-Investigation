@@ -160,4 +160,8 @@ public class PlayerController : MonoBehaviour
 		anim = p_anim;
 		person = null;
 	}
+
+	public float getPlayerAnimatorValue(string paramKey) {
+		return anim.GetFloat(paramKey);
+	}
 }
