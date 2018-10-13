@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetButtonDown("Interact") && person != null && !interacting)
 		{
-			interactables = GameObject.FindGameObjectsWithTag("Possessable");
+			interactables = GameObject.FindGameObjectsWithTag("Interactable");
 			foreach (GameObject i in interactables)
 			{
 				if (i == person)
@@ -86,8 +86,6 @@ public class PlayerController : MonoBehaviour
 				}
 				Vector3 diff = i.transform.position - person.transform.position;
 				float dist = diff.magnitude;
-				Debug.Log(interactables.Length);
-				Debug.Log(dist < pickup_range);
 				if (dist < pickup_range && dist < min_dist)
 				{
 					if (diff.x > 0 && dir_x > 0 ||
@@ -113,17 +111,23 @@ public class PlayerController : MonoBehaviour
 			{
 				person = closest;
 				rb2d.isKinematic = true;
+				anim.enabled = false;
 				transform.position = closest.transform.position;
+				rb2d.velocity = new Vector2(0, 0);
 				p_rb2d = rb2d;
 				p_anim = anim;
-				GetComponent<BoxCollider2D>().enabled = false;
+
 				anim = closest.GetComponent<Animator>();
+				anim.enabled = true;
 				rb2d = closest.GetComponent<Rigidbody2D>();
 				rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
 				person.GetComponent<NPCController>().enabled = false;
 				FindObjectsOfType<CameraController>()[0].player = person;
 				Input.ResetInputAxes();
 			}
+		}
+		if (Input.GetButtonDown("Depossess") && person != null) {
+			EndPossess();
 		}
 		if (closest && person != null) {
 			if (closest.transform.position.y > person.transform.position.y) {
@@ -150,12 +154,17 @@ public class PlayerController : MonoBehaviour
 	{
 		rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
 		rb2d = p_rb2d;
+		anim.enabled = false;
+		p_anim.enabled = true;
 		anim = p_anim;
 		person.GetComponent<NPCController>().enabled = true;
 		FindObjectsOfType<CameraController>()[0].player = gameObject;
-		transform.position = person.transform.position + person.transform.forward * 2;
-		GetComponent<BoxCollider2D>().enabled = true;
+		transform.position = person.transform.position + new Vector3(p_anim.GetFloat("walk_dir_x"), p_anim.GetFloat("walk_dir_y"), 0);
+
+		person.transform.position = new Vector3(person.transform.position.x, person.transform.position.y, -0.21875F);
+
 		person = null;
+		rb2d.bodyType = RigidbodyType2D.Dynamic;
 	}
 
 	public float getPlayerAnimatorValue(string paramKey) {
