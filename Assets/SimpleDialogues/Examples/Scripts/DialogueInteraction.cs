@@ -2,7 +2,10 @@
 using UnityEngine.UI;
 
 public class DialogueInteraction : MonoBehaviour {
+	private bool active;
+	private bool nextEnd;
 	private Dialogues dialogues;
+	private bool showingText;
     [SerializeField]
     Text dialogueText;
     [SerializeField]
@@ -20,9 +23,6 @@ public class DialogueInteraction : MonoBehaviour {
 	[SerializeField]
 	GameObject portrait;
 
-	bool nextEnd = false;
-	
-
     
 	void Start() {
 		Hide();
@@ -31,88 +31,93 @@ public class DialogueInteraction : MonoBehaviour {
 	public void Hide()
 	{
 		dialogueUI.SetActive(false);
+		buttonContainer.SetActive(false);
+		active = false;
+		showingText = true;
 	}
 
 	public void StartInteraction(GameObject obj)
 	{
+		active = true;
 		Interactable interactable = obj.GetComponent<Interactable>();
 		portrait.GetComponent<Image>().sprite = interactable.portrait;
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
+		dialogues.SetTree("interaction");
+	}
+	
+	public void ShowOther()
+	{
+		//Currently showing text, wanting to show buttons
+		if (showingText)
+		{
+			topText.text = dialogues.GetChoices()[0];
+			middleText.text = dialogues.GetChoices()[1];
+			if (dialogues.GetChoices().Length > 2)
+				bottomText.text = dialogues.GetChoices()[2];
+			
+			if (dialogues.GetChoices().Length > 2)
+				bottomText.transform.parent.gameObject.SetActive(true);
+			else
+				bottomText.transform.parent.gameObject.SetActive(false);
+		}
+
+		showingText = !showingText;
+		buttonContainer.SetActive(!showingText);
+		dialogueContainer.SetActive(showingText);
 	}
 
-    public void Choice(int index)
-    {
-        if (index == 2 && dialogues.GetCurrentTree() == "TalkAgain") index = 1;
-        if (dialogues.GetChoices().Length != 0)
-        {
-            dialogues.NextChoice(dialogues.GetChoices()[index]); //We make a choice out of the available choices based on the passed index.
-            Display();                               //We actually call this function on the left and right button's onclick functions
-        }
-        else
-        {
-            Progress();
-        }
-    }
+	public void Update()
+	{
+		if(!active)
+		{
+			return;
+		}
+		nextEnd = dialogues.End();
+		if (dialogues.GetChoices().Length != 0)
+		{
+			if (showingText)
+			{
+				ShowOther();
+			}
+			if (Input.GetKeyDown("Choice 1"))
+			{
+				Choice(0);
+			}
+			else if (Input.GetKeyDown("Choice 2"))
+			{
+				Choice(1);
+			}
+			else if (Input.GetKeyDown("Choice 3"))
+			{
+				Choice(2);
+			}
+		}
+		else
+		{
+			if (!showingText)
+			{
+				ShowOther();
+			}
+			if (Input.GetKeyDown("Interact"))
+			{
+				if(!nextEnd)
+				{
+					dialogues.Next();
+				}
+				else
+				{
+					Hide();
+				}
+			}
+		}
+	}
 
-    public void TalkAgain()
+	public void Choice(int index)
     {
-        dialogues.SetTree("TalkAgain");
-        nextEnd = false;
-        Display();
-    }
-
-    public void Progress()
-    {
-        dialogues.Next(); //This function returns the number of choices it has, in my case I'm checking that in the Display() function though.
-        Display();
-    }
-
-    public void Display()
-    {
-        if (nextEnd == true)
-        {
-            dialogueUI.SetActive(false);
-        }
-        else
-        {
-            dialogueUI.SetActive(true);
-        }
-
-        //Sets our text to the current text
-        dialogueText.text = dialogues.GetCurrentDialogue();
-        //Just debug log our triggers for example purposes
-        if (dialogues.HasTrigger())
-            Debug.Log("Triggered: "+dialogues.GetTrigger());
-        //This checks if there are any choices to be made
-        if (dialogues.GetChoices().Length != 0)
-        {
-            //Setting the text's of the buttons to the choices text, in my case I know I'll always have a max of three choices for this example.
-            topText.text = dialogues.GetChoices()[0];
-            middleText.text = dialogues.GetChoices()[1];
-            //If we only have two choices, adjust accordingly
-            if (dialogues.GetChoices().Length > 2)
-                bottomText.text = dialogues.GetChoices()[2];
-            else
-                bottomText.text = dialogues.GetChoices()[1];
-            //Setting the appropriate buttons visability
-            topText.transform.parent.gameObject.SetActive(true);
-            bottomText.transform.parent.gameObject.SetActive(true);
-            if(dialogues.GetChoices().Length > 2)
-                middleText.transform.parent.gameObject.SetActive(true);
-            else
-                middleText.transform.parent.gameObject.SetActive(false);
-        }
-        else
-        {
-            middleText.text = "Continue";
-            //Setting the appropriate buttons visability
-            topText.transform.parent.gameObject.SetActive(false);
-            bottomText.transform.parent.gameObject.SetActive(false);
-            middleText.transform.parent.gameObject.SetActive(true);
-        }
-        
-        if (dialogues.End()) //If this is the last dialogue, set it so the next time we hit "Continue" it will hide the panel
-            nextEnd = true;
+        if(index < dialogues.GetChoices().Length)
+		{
+			dialogues.NextChoice(dialogues.GetChoices()[index]);
+		}
     }
 }
