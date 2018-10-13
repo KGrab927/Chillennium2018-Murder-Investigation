@@ -65,10 +65,16 @@ public class DialogueInteraction : MonoBehaviour {
 		if (showingText)
 		{
 			topText.text = dialogues.GetChoices()[0];
-			middleText.text = dialogues.GetChoices()[1];
+			if (dialogues.GetChoices().Length > 1)
+				middleText.text = dialogues.GetChoices()[1];
 			if (dialogues.GetChoices().Length > 2)
 				bottomText.text = dialogues.GetChoices()[2];
-			
+
+			if (dialogues.GetChoices().Length > 1)
+				middleText.transform.parent.gameObject.SetActive(true);
+			else
+				middleText.transform.parent.gameObject.SetActive(false);
+
 			if (dialogues.GetChoices().Length > 2)
 				bottomText.transform.parent.gameObject.SetActive(true);
 			else
