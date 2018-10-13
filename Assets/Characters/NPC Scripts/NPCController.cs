@@ -23,10 +23,9 @@ public class NPCController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (!interacting && Time.time - prev_time > 2) {
-			int rnd1 = (rnd.Next(0, 2) == 1) ? -1 : 1;
-			Debug.Log(rnd1);
-			int rnd2 = (rnd.Next(1, 3) == 1) ? -1 : 1;
-			Debug.Log(rnd2);
+			int rnd1 = rnd.Next(0, 3) - 1;
+			int rnd2 = rnd.Next(0, 3) - 1;
+
 			ac.SetFloat("walk_dir_x", rnd1);
 			ac.SetFloat("walk_dir_y", rnd2);
 			prev_time = Time.time;
