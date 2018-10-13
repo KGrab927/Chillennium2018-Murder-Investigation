@@ -427,6 +427,7 @@ GameObject:
   - component: {fileID: 591971248}
   - component: {fileID: 591971247}
   - component: {fileID: 591971246}
+  - component: {fileID: 591971253}
   m_Layer: 0
   m_Name: Dutchess
   m_TagString: Possessable
@@ -693,6 +694,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &591971253
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 591971245}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &612579167
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +728,7 @@ GameObject:
   - component: {fileID: 612579170}
   - component: {fileID: 612579169}
   - component: {fileID: 612579168}
+  - component: {fileID: 612579175}
   m_Layer: 0
   m_Name: Money
   m_TagString: Possessable
@@ -973,6 +995,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &612579175
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612579167}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &639369335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,7 +1671,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1112923061}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.21, y: 16.36, z: -0.21875}
+  m_LocalPosition: {x: -5.21, y: 16.36, z: -0.3}
   m_LocalScale: {x: 4.286427, y: 4.286427, z: 4.286427}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2072,6 +2114,7 @@ GameObject:
   - component: {fileID: 1317867791}
   - component: {fileID: 1317867790}
   - component: {fileID: 1317867789}
+  - component: {fileID: 1317867796}
   m_Layer: 0
   m_Name: Butler
   m_TagString: Possessable
@@ -2338,6 +2381,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1317867796
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1317867788}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1343400956
 GameObject:
   m_ObjectHideFlags: 0
