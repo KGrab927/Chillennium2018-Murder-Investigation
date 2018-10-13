@@ -32,7 +32,6 @@ public class DialogueInteraction : MonoBehaviour {
 		dialogueContainer.SetActive(true);
 		active = false;
 		showingText = true;
-		FindObjectsOfType<PlayerController>()[0].EndInteract();
 	}
 
 	public void Hide()
@@ -54,6 +53,7 @@ public class DialogueInteraction : MonoBehaviour {
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
 		dialogues.SetTree(str);
+		dialogues.Reset();
 		dialogueText.text = dialogues.GetCurrentDialogue();
 		dialogueUI.SetActive(true);
 		
