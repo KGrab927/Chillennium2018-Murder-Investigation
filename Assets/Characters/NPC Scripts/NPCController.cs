@@ -33,9 +33,15 @@ public class NPCController : MonoBehaviour {
 			ac.SetFloat("walk_dir_y", rnd2);
 			prev_time = Time.time;
 		}
+<<<<<<< HEAD
 		else if(interacting) {
 			ac.SetFloat("walk_dir_x", FindObjectsOfType<PlayerController>()[0].getPlayerAnimatorValue("walk_dir_x"));
 			ac.SetFloat("walk_dir_y", FindObjectsOfType<PlayerController>()[0].getPlayerAnimatorValue("walk_dir_y"));	
+=======
+		else if (interacting) {
+			ac.SetFloat("walk_dir_x", GetComponent<PlayerController>().getPlayerAnimatorValue("walk_dir_x"));
+			ac.SetFloat("walk_dir_y", GetComponent<PlayerController>().getPlayerAnimatorValue("walk_dir_y"));	
+>>>>>>> c41853241c3c1a4f866373f9a6e45c1e1d750346
 		}
 	}
 }

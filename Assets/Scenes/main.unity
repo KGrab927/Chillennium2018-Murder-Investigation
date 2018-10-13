@@ -1211,6 +1211,7 @@ GameObject:
   - component: {fileID: 895522884}
   - component: {fileID: 895522886}
   - component: {fileID: 895522890}
+  - component: {fileID: 895522891}
   m_Layer: 0
   m_Name: Chef
   m_TagString: Possessable
@@ -1477,6 +1478,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interaction_string: chef
   portrait: {fileID: 21300000, guid: b7f625508b24ac54793159fa54275f5a, type: 3}
+--- !u!50 &895522891
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895522883}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &905281329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1689,7 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5fa2b0c55d87e46bb6348f80f7106d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickup_range: 1
+  pickup_range: 1.5
   dialogueInteraction: {fileID: 0}
   speed: 5
   interacting: 0
