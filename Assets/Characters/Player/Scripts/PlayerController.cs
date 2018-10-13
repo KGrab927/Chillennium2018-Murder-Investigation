@@ -76,6 +76,26 @@ public class PlayerController : MonoBehaviour
 					}
 				}
 			}
+			interactables = GameObject.FindGameObjectsWithTag("Possessable");
+
+			foreach (GameObject i in interactables)
+			{
+				Vector3 diff = i.transform.position - transform.position;
+				float dist = diff.magnitude;
+				Debug.Log(interactables.Length);
+				Debug.Log(dist < pickup_range);
+				if (dist < pickup_range && dist < min_dist)
+				{
+					if (diff.x > 0 && dir_x > 0 ||
+					   diff.x < 0 && dir_x < 0 ||
+					   diff.y > 0 && dir_y > 0 ||
+					   diff.y < 0 && dir_y < 0)
+					{
+						min_dist = dist;
+						closest = i;
+					}
+				}
+			}
 
 			if (closest)
 			{
@@ -111,9 +131,10 @@ public class PlayerController : MonoBehaviour
 
 			if (closest)
 			{
-				person = null; 
+				person = closest.GetComponent<Interactable>().interaction_string;
+				transform.position = closest.transform.position;
+				gameObject.SetActive(false);
 				Input.ResetInputAxes();
-				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
 			}
 		}
 	}
