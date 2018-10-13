@@ -25,8 +25,14 @@ public class DialogueInteraction : MonoBehaviour {
 	GameObject portrait;
 
     
-	void Start() {
-		Hide();
+	void Start()
+	{
+		dialogueUI.SetActive(false);
+		buttonContainer.SetActive(false);
+		dialogueContainer.SetActive(true);
+		active = false;
+		showingText = true;
+		FindObjectsOfType<PlayerController>()[0].EndInteract();
 	}
 
 	public void Hide()

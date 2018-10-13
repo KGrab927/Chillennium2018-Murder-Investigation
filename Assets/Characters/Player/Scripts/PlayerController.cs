@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 	
 	private Rigidbody2D rb2d;
 	private Animator anim;
-	private bool isPerson;
+	private string person;
 	float dir_x, dir_y;
 
 	[HideInInspector]
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
 		rb2d.freezeRotation = true;
-		isPerson = true;
+		person = null;
 		interacting = false;
 		dir_x = 0;
 		dir_y = 0;
@@ -52,11 +52,10 @@ public class PlayerController : MonoBehaviour
 			anim.SetFloat("walk_dir_x", moveHorizontal);
 			anim.SetFloat("walk_dir_y", moveVertical);
 		}
-		GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
 
-
-		if(Input.GetButtonDown("Interact") && isPerson && !interacting)
+		if(Input.GetButtonDown("Interact") && person != null && !interacting)
 		{
+			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
 			GameObject closest = null;
 			float min_dist = pickup_range;
 			foreach (GameObject i in interactables)
@@ -84,10 +83,42 @@ public class PlayerController : MonoBehaviour
 				Input.ResetInputAxes();
 				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
 			}
+		} 
+		else if(Input.GetButtonDown("Interact") && person == null && !interacting)
+		{
+
+			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
+			GameObject closest = null;
+			float min_dist = pickup_range;
+			foreach (GameObject i in interactables)
+			{
+				Vector3 diff = i.transform.position - transform.position;
+				float dist = diff.magnitude;
+				Debug.Log(interactables.Length);
+				Debug.Log(dist < pickup_range);
+				if (dist < pickup_range && dist < min_dist)
+				{
+					if (diff.x > 0 && dir_x > 0 ||
+					   diff.x < 0 && dir_x < 0 ||
+					   diff.y > 0 && dir_y > 0 ||
+					   diff.y < 0 && dir_y < 0)
+					{
+						min_dist = dist;
+						closest = i;
+					}
+				}
+			}
+
+			if (closest)
+			{
+				isPerson = true; 
+				Input.ResetInputAxes();
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
+			}
 		}
 	}
-	public void EndInteract()
+	public void EndPossess()
 	{
-		interacting = false;
+		isPerson = false;
 	}
 }
