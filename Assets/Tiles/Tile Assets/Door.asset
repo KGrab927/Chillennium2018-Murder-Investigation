@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Door
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 0a451cb9697c39044815bbd2d048826c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2735849, g: 0.10194909, b: 0.10194909, a: 1}
   m_Transform:
     e00: 1
     e01: 0
