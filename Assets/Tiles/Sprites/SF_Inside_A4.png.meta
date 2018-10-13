@@ -1,12 +1,86 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 75ee5660a878daa4e9861801b5543f8e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SF_Inside_A4_0
+    21300002: SF_Inside_A4_1
+    21300004: SF_Inside_A4_2
+    21300006: SF_Inside_A4_3
+    21300008: SF_Inside_A4_4
+    21300010: SF_Inside_A4_5
+    21300012: SF_Inside_A4_6
+    21300014: SF_Inside_A4_7
+    21300016: SF_Inside_A4_8
+    21300018: SF_Inside_A4_9
+    21300020: SF_Inside_A4_10
+    21300022: SF_Inside_A4_11
+    21300024: SF_Inside_A4_12
+    21300026: SF_Inside_A4_13
+    21300028: SF_Inside_A4_14
+    21300030: SF_Inside_A4_15
+    21300032: SF_Inside_A4_16
+    21300034: SF_Inside_A4_17
+    21300036: SF_Inside_A4_18
+    21300038: SF_Inside_A4_19
+    21300040: SF_Inside_A4_20
+    21300042: SF_Inside_A4_21
+    21300044: SF_Inside_A4_22
+    21300046: SF_Inside_A4_23
+    21300048: SF_Inside_A4_24
+    21300050: SF_Inside_A4_25
+    21300052: SF_Inside_A4_26
+    21300054: SF_Inside_A4_27
+    21300056: SF_Inside_A4_28
+    21300058: SF_Inside_A4_29
+    21300060: SF_Inside_A4_30
+    21300062: SF_Inside_A4_31
+    21300064: SF_Inside_A4_32
+    21300066: SF_Inside_A4_33
+    21300068: SF_Inside_A4_34
+    21300070: SF_Inside_A4_35
+    21300072: SF_Inside_A4_36
+    21300074: SF_Inside_A4_37
+    21300076: SF_Inside_A4_38
+    21300078: SF_Inside_A4_39
+    21300080: SF_Inside_A4_40
+    21300082: SF_Inside_A4_41
+    21300084: SF_Inside_A4_42
+    21300086: SF_Inside_A4_43
+    21300088: SF_Inside_A4_44
+    21300090: SF_Inside_A4_45
+    21300092: SF_Inside_A4_46
+    21300094: SF_Inside_A4_47
+    21300096: SF_Inside_A4_48
+    21300098: SF_Inside_A4_49
+    21300100: SF_Inside_A4_50
+    21300102: SF_Inside_A4_51
+    21300104: SF_Inside_A4_52
+    21300106: SF_Inside_A4_53
+    21300108: SF_Inside_A4_54
+    21300110: SF_Inside_A4_55
+    21300112: SF_Inside_A4_56
+    21300114: SF_Inside_A4_57
+    21300116: SF_Inside_A4_58
+    21300118: SF_Inside_A4_59
+    21300120: SF_Inside_A4_60
+    21300122: SF_Inside_A4_61
+    21300124: SF_Inside_A4_62
+    21300126: SF_Inside_A4_63
+=======
 guid: ec933acd0300aff49a88163cd98a63a7
 TextureImporter:
   fileIDToRecycleName: {}
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
+    enableMipMap: 1
+=======
     enableMipMap: 0
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -27,7 +101,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
+<<<<<<< HEAD
+  textureFormat: -1
+=======
   textureFormat: 1
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
@@ -40,7 +118,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
+  spriteMode: 2
+=======
   spriteMode: 1
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,6 +151,1306 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SF_Inside_A4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 579
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1634b60e14a4e714ebaae04e570687d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 578
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f283d3094913f4e806d4ca56c1504e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 579
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ccbb7d165d503b4a9b8c32bab279f9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_3
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 579
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91026366261507141ad4377f60466921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_4
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 577
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b0a2a77bcae31419ad10d2c6abaa88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_5
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 576
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0fd4e6629bd5244bfc9e98764d3d6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_6
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 576
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9f5d67136bc6f4e82b835029554862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 481
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f3a2d047d28d54685f7e58a9792c5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 482
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c7dc20b180b364e8e469088c46b370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 482
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0c50a83dd81dd459d339f6b92595c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_10
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 485
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00649a68b7eae244db0d3dd646d4cfb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 485
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518eb2c629c070a428d75c95847eae89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_12
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 484
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94269d3d63888cb47a38d3a134f9f112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_13
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 483
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2e5643c79170c47ada7046ed9a73dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848f5bed1b04e174f9ff9fa7b600f32a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae98e1700a3316b4cad440f879f09770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_16
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f507c2757c0614587958361b6ec352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_17
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d61d788bdc1614cbf62e3a2a9fc981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_18
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5600f92001ad28488f10a38f849e7d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_19
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 435
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11121eff811ba844e84f8b517a1ff01f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_20
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 434
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 47}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424e5a376bbf7ac4fa8d805fff4bbe94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 340
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e05788940c70f42b4bf03aee8e73ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 338
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0f9b8c767b55149863c789b345e337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_23
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 337
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b965a7c344796f54ba6aac3abb7bfa7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_24
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 336
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6127add0ce1a7cd47b66ad2840940ff1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 337
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f486a1cbe7ec50479b0a47f10d7bcaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 338
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07646a130e1b5b843acb7883f121caad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 335
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2214a1af242451a46a40253ceb217292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2279bacf6d00aa6459445ee17f5080c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_29
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008a8e39556a28546b745434954f0c57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_30
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e346ca8dff67a4cac3d12c8993d861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_31
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9dc6fbe25c20e468fa36e683a17321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_32
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423af8d82dcc97445ae451cf71b44166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_33
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 245
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b223b578b760d44c8880aceca38c109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_34
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 243
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0dce0938193279439e2b7d2a441dfa7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159a2a3015d61bc4fa2693f7f89a1820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3778d5d0aa12c54f8895998530f997d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 95
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087328027d121864aaf40892465a56f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_38
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 94
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd2590e5a70d4f40a1ed5576badcf36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_39
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 97
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5f5406e61fbea4b8d3f6dfb423994f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_40
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 98
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf4db8779f0bbe40a64c27027098c61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_41
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 98
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51babe4ac93b8d743a0eb17316801f3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bae102f5e096744181f4c2413ec6c71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddf768fbc7fc2f47932c360b21bce0b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_44
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 3
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903743a28c0ad33499a947739ff1dfe8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_45
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 2
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59c5fbe2a0a9d649a43d15895909f0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_46
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f221a7eba859e4096ee2bce5f8eff6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bdfda89d703974b90b47c823d89697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_48
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 8
+        width: 97
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f750cba4a1f583645968b67512b26977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_49
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 486
+        width: 93
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a519a38b238f48541a9e2d7750c2776b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_50
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 578
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3764131272e64db33e34189b7598b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_51
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 670
+        width: 92
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecf17445ddc931499feefae9f3a58a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_52
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 671
+        width: 98
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74378ef9c5a730b4689e7a1f66f5ccb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_53
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 95
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cb3e200c52df74781ac23cca39f115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_54
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 673
+        width: 98
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d6ae98c5da2b94081e38ffc3b3c86a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_55
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 670
+        width: 96
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e04e09bca85bf04c9445501ac59c59f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 671
+        width: 95
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cf92c4cb2f9a5341b6a211542fb7915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_57
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 672
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaeb0093b70b4543b7ad69590331a43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 95
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2eb80b26279b04e88322bbc82c50e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_59
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 335
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba1ba6670e47084bb776074da835d5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_60
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 244
+        width: 96
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9ad372ed00227345959a333e1b14db3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_61
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 191
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facc8548f34d1694d9d2e0141a1b7ca0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_62
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 104
+        width: 94
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9c83207350bb24da0639ee28917e23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SF_Inside_A4_63
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 2
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0324d6d8740c3fd4b98ab8078aa6a003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d9adaf7391d675344868047ad0dbb332
+=======
   spriteSheet:
     serializedVersion: 2
     sprites: []
@@ -76,6 +1458,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 86cc424a158ab1d4f9d4b3085dded687
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
     vertices: []
     indices: 
     edges: []

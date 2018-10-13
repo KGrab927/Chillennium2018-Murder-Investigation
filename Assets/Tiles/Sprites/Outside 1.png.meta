@@ -1,20 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 1210bcf3be666e14a8f0956ded1a3fed
-timeCreated: 1539411806
-licenseType: Free
-TextureImporter:
-  fileIDToRecycleName: {}
-  serializedVersion: 2
-  mipmaps:
-    mipMapMode: 0
-    enableMipMap: 1
-    linearTexture: 0
-    correctGamma: 0
-    fadeOut: 0
-    borderMipMap: 0
-=======
-guid: 1dabbb9cd0fc1bb4c96e00f679b9fff1
+guid: 9fb8312551f2ebf40beb8b34635873fa
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -28,7 +13,6 @@ TextureImporter:
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
     alphaTestReferenceValue: 0.5
->>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -37,24 +21,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-<<<<<<< HEAD
-  grayScaleToAlpha: 0
-  generateCubemap: 0
-  cubemapConvolution: 0
-  cubemapConvolutionSteps: 7
-  cubemapConvolutionExponent: 1.5
-  seamlessCubemap: 0
-  textureFormat: -1
-  maxTextureSize: 2048
-  textureSettings:
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
-    wrapMode: 1
-  nPOTScale: 0
-  lightmap: 0
-  rGBM: 0
-=======
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -73,20 +39,12 @@ TextureImporter:
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
->>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
-  alphaIsTransparency: 1
-  textureType: 8
-  buildTargetSettings: []
-=======
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -111,17 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
->>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   spriteSheet:
     serializedVersion: 2
     sprites: []
     outline: []
-<<<<<<< HEAD
-  spritePackingTag: 
-=======
     physicsShape: []
     bones: []
-    spriteID: cc043f0023a81a747b5ebaa0a31a46f4
+    spriteID: 202a09fdfa4def34b9181794f3daeb8c
     vertices: []
     indices: 
     edges: []
@@ -129,7 +83,6 @@ TextureImporter:
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
->>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   userData: 
   assetBundleName: 
   assetBundleVariant: 
