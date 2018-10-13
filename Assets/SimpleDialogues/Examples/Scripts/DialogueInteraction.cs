@@ -33,7 +33,7 @@ public class DialogueInteraction : MonoBehaviour {
 		dialogueUI.SetActive(false);
 	}
 
-	public void StartConversation(GameObject obj)
+	public void StartInteraction(GameObject obj)
 	{
 		Interactable interactable = obj.GetComponent<Interactable>();
 		portrait.GetComponent<Image>().sprite = interactable.portrait;
