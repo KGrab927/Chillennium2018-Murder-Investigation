@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 03302fbb0dc637d4696fb378b3ffbbab
 TextureImporter:
   fileIDToRecycleName:
@@ -26,11 +27,20 @@ TextureImporter:
     21300042: Inside_A5_21
     21300044: Inside_A5_22
     21300046: Inside_A5_23
+=======
+guid: 87dc314981b2eee4c83a28e290089e1c
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 1
+=======
+    enableMipMap: 0
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -51,7 +61,11 @@ TextureImporter:
   generateCubemap: 6
   cubemapConvolution: 0
   seamlessCubemap: 0
+<<<<<<< HEAD
   textureFormat: -1
+=======
+  textureFormat: 1
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
@@ -64,7 +78,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,6 +111,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+<<<<<<< HEAD
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
@@ -591,6 +610,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: f71bf87226b7f6543aec696f7bfd18df
+=======
+  spriteSheet:
+    serializedVersion: 2
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c61307d0da762d6428496bff5b03def9
+>>>>>>> e0c53a5f5ae862dfc62b4763d8460c77380f71be
     vertices: []
     indices: 
     edges: []
