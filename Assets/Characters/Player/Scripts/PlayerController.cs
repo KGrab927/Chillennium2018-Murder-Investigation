@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
 	public float speed;            
 	
 	private Rigidbody2D rb2d;
+	private Rigidbody2D p_rb2d;
 	private Animator anim;
-	private string person;
+	private Animator p_anim;
+	private GameObject person;
 	float dir_x, dir_y;
 
 	[HideInInspector]
@@ -53,17 +55,15 @@ public class PlayerController : MonoBehaviour
 			anim.SetFloat("walk_dir_y", moveVertical);
 		}
 
-		if(Input.GetButtonDown("Interact") && person != null && !interacting)
+		if (Input.GetButtonDown("Interact") && person != null && !interacting)
 		{
 			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
 			GameObject closest = null;
 			float min_dist = pickup_range;
 			foreach (GameObject i in interactables)
 			{
-				Vector3 diff = i.transform.position - transform.position;
+				Vector3 diff = i.transform.position - person.transform.position;
 				float dist = diff.magnitude;
-				Debug.Log(interactables.Length);
-				Debug.Log(dist < pickup_range);
 				if (dist < pickup_range && dist < min_dist)
 				{
 					if(diff.x > 0 && dir_x > 0 ||
@@ -80,7 +80,11 @@ public class PlayerController : MonoBehaviour
 
 			foreach (GameObject i in interactables)
 			{
-				Vector3 diff = i.transform.position - transform.position;
+				if (i == person)
+				{
+					continue;
+				}
+				Vector3 diff = i.transform.position - person.transform.position;
 				float dist = diff.magnitude;
 				Debug.Log(interactables.Length);
 				Debug.Log(dist < pickup_range);
@@ -101,12 +105,11 @@ public class PlayerController : MonoBehaviour
 			{
 				interacting = true;
 				Input.ResetInputAxes();
-				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, person.GetComponent<Interactable>().interaction_string);
 			}
 		} 
 		else if(Input.GetButtonDown("Interact") && person == null && !interacting)
 		{
-
 			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
 			GameObject closest = null;
 			float min_dist = pickup_range;
@@ -114,8 +117,6 @@ public class PlayerController : MonoBehaviour
 			{
 				Vector3 diff = i.transform.position - transform.position;
 				float dist = diff.magnitude;
-				Debug.Log(interactables.Length);
-				Debug.Log(dist < pickup_range);
 				if (dist < pickup_range && dist < min_dist)
 				{
 					if (diff.x > 0 && dir_x > 0 ||
@@ -131,9 +132,17 @@ public class PlayerController : MonoBehaviour
 
 			if (closest)
 			{
-				person = closest.GetComponent<Interactable>().interaction_string;
+				person = closest;
+				rb2d.isKinematic = true;
 				transform.position = closest.transform.position;
-				gameObject.SetActive(false);
+				p_rb2d = rb2d;
+				p_anim = anim;
+				GetComponent<BoxCollider2D>().enabled = false;
+				anim = closest.GetComponent<Animator>();
+				rb2d = closest.GetComponent<Rigidbody2D>();
+				rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+				person.GetComponent<NPCController>().enabled = false;
+				FindObjectsOfType<CameraController>()[0].player = person;
 				Input.ResetInputAxes();
 			}
 		}
@@ -144,6 +153,13 @@ public class PlayerController : MonoBehaviour
 	}
 	public void EndPossess()
 	{
+		rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+		rb2d = p_rb2d;
+		anim = p_anim;
+		person.GetComponent<NPCController>().enabled = true;
+		FindObjectsOfType<CameraController>()[0].player = gameObject;
+		transform.position = person.transform.position + person.transform.forward * 2;
+		GetComponent<BoxCollider2D>().enabled = true;
 		person = null;
 	}
 

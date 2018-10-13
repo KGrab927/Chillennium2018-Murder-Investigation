@@ -32,7 +32,6 @@ public class DialogueInteraction : MonoBehaviour {
 		dialogueContainer.SetActive(true);
 		active = false;
 		showingText = true;
-		FindObjectsOfType<PlayerController>()[0].EndInteract();
 	}
 
 	public void Hide()
@@ -46,14 +45,15 @@ public class DialogueInteraction : MonoBehaviour {
 		interactable.EndInteract();
 	}
 
-	public void StartInteraction(GameObject obj)
+	public void StartInteraction(GameObject obj, string str)
 	{
 		active = true;
 		interactable = obj.GetComponent<Interactable>();
 		portrait.GetComponent<Image>().sprite = interactable.portrait;
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
-		dialogues.SetTree("interaction");
+		dialogues.SetTree(str);
+		dialogues.Reset();
 		dialogueText.text = dialogues.GetCurrentDialogue();
 		dialogueUI.SetActive(true);
 		
