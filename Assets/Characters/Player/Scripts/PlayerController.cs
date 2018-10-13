@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
 
 		if (Input.GetButtonDown("Interact") && person != null && !interacting)
 		{
-			interactables = GameObject.FindGameObjectsWithTag("Possessable");
+			interactables = GameObject.FindGameObjectsWithTag("Interactable");
 			foreach (GameObject i in interactables)
 			{
 				if (i == person)
@@ -111,10 +111,14 @@ public class PlayerController : MonoBehaviour
 			{
 				person = closest;
 				rb2d.isKinematic = true;
+				anim.enabled = false;
 				transform.position = closest.transform.position;
+				rb2d.velocity = new Vector2(0, 0);
 				p_rb2d = rb2d;
 				p_anim = anim;
+
 				anim = closest.GetComponent<Animator>();
+				anim.enabled = true;
 				rb2d = closest.GetComponent<Rigidbody2D>();
 				rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
 				person.GetComponent<NPCController>().enabled = false;
@@ -150,16 +154,12 @@ public class PlayerController : MonoBehaviour
 	{
 		rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
 		rb2d = p_rb2d;
-
-		anim.SetFloat("walk_dir_x", 0);
-		anim.SetFloat("walk_dir_y", 0);
-		Debug.Log(anim.GetFloat("walk_dir_x"));
-		Debug.Log(anim.GetFloat("walk_dir_x"));
-
+		anim.enabled = false;
+		p_anim.enabled = true;
 		anim = p_anim;
 		person.GetComponent<NPCController>().enabled = true;
 		FindObjectsOfType<CameraController>()[0].player = gameObject;
-		transform.position = person.transform.position + new Vector3(2 * p_anim.GetFloat("walk_dir_x"), 2 * p_anim.GetFloat("walk_dir_y"), 0);
+		transform.position = person.transform.position + new Vector3(p_anim.GetFloat("walk_dir_x"), p_anim.GetFloat("walk_dir_y"), 0);
 
 		person.transform.position = new Vector3(person.transform.position.x, person.transform.position.y, -0.21875F);
 
