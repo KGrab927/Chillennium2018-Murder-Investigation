@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour
 	public float speed;            
 	
 	private Rigidbody2D rb2d;
+	private Rigidbody2D p_rb2d;
 	private Animator anim;
-	private string person;
+	private Animator p_anim;
+	private GameObject person;
 	float dir_x, dir_y;
 
 	[HideInInspector]
@@ -80,6 +82,10 @@ public class PlayerController : MonoBehaviour
 
 			foreach (GameObject i in interactables)
 			{
+				if (i == person)
+				{
+					continue;
+				}
 				Vector3 diff = i.transform.position - transform.position;
 				float dist = diff.magnitude;
 				Debug.Log(interactables.Length);
@@ -101,12 +107,12 @@ public class PlayerController : MonoBehaviour
 			{
 				interacting = true;
 				Input.ResetInputAxes();
-				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, person.GetComponent<Interactable>().interaction_string);
 			}
 		} 
 		else if(Input.GetButtonDown("Interact") && person == null && !interacting)
 		{
-
+			Debug.Log("POSSESS");
 			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
 			GameObject closest = null;
 			float min_dist = pickup_range;
@@ -116,6 +122,7 @@ public class PlayerController : MonoBehaviour
 				float dist = diff.magnitude;
 				Debug.Log(interactables.Length);
 				Debug.Log(dist < pickup_range);
+				Debug.Log(dist);
 				if (dist < pickup_range && dist < min_dist)
 				{
 					if (diff.x > 0 && dir_x > 0 ||
@@ -131,9 +138,13 @@ public class PlayerController : MonoBehaviour
 
 			if (closest)
 			{
-				person = closest.GetComponent<Interactable>().interaction_string;
+				person = closest;
 				transform.position = closest.transform.position;
-				gameObject.SetActive(false);
+				p_rb2d = rb2d;
+				p_anim = anim;
+				anim = closest.GetComponent<Animator>();
+				rb2d = closest.GetComponent<Rigidbody2D>();
+				rb2d.constraints = RigidbodyConstraints2D.FreezeRotation;
 				Input.ResetInputAxes();
 			}
 		}
@@ -144,6 +155,9 @@ public class PlayerController : MonoBehaviour
 	}
 	public void EndPossess()
 	{
+		rb2d.constraints = RigidbodyConstraints2D.FreezeAll;
+		rb2d = p_rb2d;
+		anim = p_anim;
 		person = null;
 	}
 }
