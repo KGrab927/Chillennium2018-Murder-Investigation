@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
 			if (closest)
 			{
 				interacting = true;
-				dialogueInteraction.StartConversation(closest);
+				dialogueInteraction.StartInteraction(closest);
 			}
 		}
 	}
