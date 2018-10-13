@@ -146,4 +146,8 @@ public class PlayerController : MonoBehaviour
 	{
 		person = null;
 	}
+
+	public float getPlayerAnimatorValue(string paramKey) {
+		return anim.GetFloat(paramKey);
+	}
 }

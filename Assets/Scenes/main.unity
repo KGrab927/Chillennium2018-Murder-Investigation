@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 591971246}
   m_Layer: 0
   m_Name: Dutchess
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 612579168}
   m_Layer: 0
   m_Name: Money
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 895522890}
   m_Layer: 0
   m_Name: Chef
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2053,7 +2053,7 @@ GameObject:
   - component: {fileID: 1317867789}
   m_Layer: 0
   m_Name: Butler
-  m_TagString: Interactable
+  m_TagString: Possessable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
