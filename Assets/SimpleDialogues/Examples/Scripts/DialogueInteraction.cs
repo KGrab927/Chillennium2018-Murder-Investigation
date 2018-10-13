@@ -33,10 +33,12 @@ public class DialogueInteraction : MonoBehaviour {
 		dialogueUI.SetActive(false);
 	}
 
-	public void StartConversation(GameObject NPC)
+	public void StartConversation(GameObject obj)
 	{
-		portrait.GetComponent<Image>().sprite = NPC.GetComponent<NPCData>().portrait;
-		dialogues = NPC.GetComponent<Dialogues>();
+		Interactable interactable = obj.GetComponent<Interactable>();
+		portrait.GetComponent<Image>().sprite = interactable.portrait;
+		interactable.Interact();
+		dialogues = interactable.GetComponent<Dialogues>();
 	}
 
     public void Choice(int index)

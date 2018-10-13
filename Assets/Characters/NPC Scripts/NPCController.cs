@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCController : MonoBehaviour {
+	[HideInInspector]
+	public bool interacting;
 
 	// Use this for initialization
 	void Start () {
