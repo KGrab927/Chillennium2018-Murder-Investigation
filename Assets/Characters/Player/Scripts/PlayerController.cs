@@ -114,6 +114,7 @@ public class PlayerController : MonoBehaviour
 				anim.enabled = false;
 				transform.position = closest.transform.position;
 				rb2d.velocity = new Vector2(0, 0);
+				transform.position = new Vector3(1000F, 1000F, -50F);
 				p_rb2d = rb2d;
 				p_anim = anim;
 
