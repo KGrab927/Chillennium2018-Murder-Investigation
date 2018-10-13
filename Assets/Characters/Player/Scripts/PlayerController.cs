@@ -55,29 +55,29 @@ public class PlayerController : MonoBehaviour
 			anim.SetFloat("walk_dir_y", moveVertical);
 		}
 
-		GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
-		GameObject closest = null;
-		float min_dist = pickup_range;
-		foreach (GameObject i in interactables)
-		{
-			Vector3 diff = (person == null) ? i.transform.position - transform.position : i.transform.position - person.transform.position;
-			float dist = diff.magnitude;
-			if (dist < pickup_range && dist < min_dist)
-			{
-				if (diff.x > 0 && dir_x > 0 ||
-					diff.x < 0 && dir_x < 0 ||
-					diff.y > 0 && dir_y > 0 ||
-					diff.y < 0 && dir_y < 0)
-				{
-					min_dist = dist;
-					closest = i;
-				}
-			}
-		}
-
 		if (Input.GetButtonDown("Interact") && person != null && !interacting)
 		{
+			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Interactable");
+			GameObject closest = null;
+			float min_dist = pickup_range;
+			foreach (GameObject i in interactables)
+			{
+				Vector3 diff = i.transform.position - person.transform.position;
+				float dist = diff.magnitude;
+				if (dist < pickup_range && dist < min_dist)
+				{
+					if(diff.x > 0 && dir_x > 0 ||
+					   diff.x < 0 && dir_x < 0 ||
+					   diff.y > 0 && dir_y > 0 ||
+					   diff.y < 0 && dir_y < 0)
+					{
+						min_dist = dist;
+						closest = i;
+					}
+				}
+			}
 			interactables = GameObject.FindGameObjectsWithTag("Possessable");
+
 			foreach (GameObject i in interactables)
 			{
 				if (i == person)
@@ -100,6 +100,7 @@ public class PlayerController : MonoBehaviour
 					}
 				}
 			}
+
 			if (closest)
 			{
 				interacting = true;
@@ -109,6 +110,26 @@ public class PlayerController : MonoBehaviour
 		} 
 		else if(Input.GetButtonDown("Interact") && person == null && !interacting)
 		{
+			GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
+			GameObject closest = null;
+			float min_dist = pickup_range;
+			foreach (GameObject i in interactables)
+			{
+				Vector3 diff = i.transform.position - transform.position;
+				float dist = diff.magnitude;
+				if (dist < pickup_range && dist < min_dist)
+				{
+					if (diff.x > 0 && dir_x > 0 ||
+					   diff.x < 0 && dir_x < 0 ||
+					   diff.y > 0 && dir_y > 0 ||
+					   diff.y < 0 && dir_y < 0)
+					{
+						min_dist = dist;
+						closest = i;
+					}
+				}
+			}
+
 			if (closest)
 			{
 				person = closest;
@@ -123,23 +144,6 @@ public class PlayerController : MonoBehaviour
 				person.GetComponent<NPCController>().enabled = false;
 				FindObjectsOfType<CameraController>()[0].player = person;
 				Input.ResetInputAxes();
-			}
-		}
-
-		if (person == null && closest) {
-			if (closest.transform.position.y > transform.position.y) {
-				transform.position = new Vector3(transform.position.x, transform.position.y, -0.3f);
-			}
-			else {
-				transform.position = new Vector3(transform.position.x, transform.position.y, -0.2f);
-			}
-		}
-		else if (closest) {
-			if (closest.transform.position.y > person.transform.position.y) {
-				person.transform.position = new Vector3(person.transform.position.x, person.transform.position.y, -0.3f);
-			}
-			else {
-				person.transform.position = new Vector3(person.transform.position.x, person.transform.position.y, -0.2f);
 			}
 		}
 	}
