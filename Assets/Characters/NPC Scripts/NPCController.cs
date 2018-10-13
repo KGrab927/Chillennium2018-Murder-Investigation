@@ -33,5 +33,9 @@ public class NPCController : MonoBehaviour {
 			ac.SetFloat("walk_dir_y", rnd2);
 			prev_time = Time.time;
 		}
+		else {
+			ac.SetFloat("walk_dir_x", x);
+			ac.SetFloat("walk_dir_y", y);	
+		}
 	}
 }
