@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour {
-	public Sprite portrait;
 	public string interaction_string;
+	public Sprite portrait;
 
 	public void Interact()
 	{

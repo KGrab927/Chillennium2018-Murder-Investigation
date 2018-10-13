@@ -111,14 +111,18 @@ public class PlayerController : MonoBehaviour
 
 			if (closest)
 			{
-				isPerson = true; 
+				person = null; 
 				Input.ResetInputAxes();
 				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest);
 			}
 		}
 	}
+	public void EndInteract()
+	{
+		interacting = false;
+	}
 	public void EndPossess()
 	{
-		isPerson = false;
+		person = null;
 	}
 }
