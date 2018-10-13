@@ -207,7 +207,7 @@ SpriteRenderer:
   m_Size: {x: 0.22, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1112923065
@@ -356,7 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3b21792cacbae448a03a19c9b3a7524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1112923061}
+  follow_speed: 10
 --- !u!1 &1513486623
 GameObject:
   m_ObjectHideFlags: 0
