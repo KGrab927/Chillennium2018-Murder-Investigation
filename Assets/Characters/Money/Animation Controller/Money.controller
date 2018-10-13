@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Player
+  m_Name: Money
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: moving
@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: walk_dir_x
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: walk_dir_y
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -93,7 +93,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: aabcae8fe71bf1341bc8fee798516ee4, type: 2}
+    m_Motion: {fileID: 7400000, guid: d54e6dae3c6f0094fa5907d4ab2f093c, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 1}
     m_TimeScale: 1
@@ -101,7 +101,7 @@ BlendTree:
     m_DirectBlendParameter: walk_dir_x
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 481fb6a1c1394f143b7fc8af4ff6df3e, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2d94d2132a357b64d859a6a268e21703, type: 2}
     m_Threshold: 0.33333334
     m_Position: {x: 0, y: -1}
     m_TimeScale: 1
@@ -109,7 +109,7 @@ BlendTree:
     m_DirectBlendParameter: walk_dir_x
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: aba3f5f703ad3cc41b201f07b2b01228, type: 2}
+    m_Motion: {fileID: 7400000, guid: 2a99417c0185f6547ac926dcf7de14f5, type: 2}
     m_Threshold: 0.6666667
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
@@ -117,7 +117,7 @@ BlendTree:
     m_DirectBlendParameter: walk_dir_x
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 48623c7dce58b5043a3cc0bd675d72fa, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5d17c62b3e0a401479a135ea12290cc3, type: 2}
     m_Threshold: 1
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -364,12 +364,12 @@ AnimatorStateMachine:
   m_EntryTransitions:
   - {fileID: 1109610797697192344}
   m_StateMachineTransitions:
-  - first: {fileID: 1107184734721271530}
-    second:
-    - {fileID: 1109187643643523624}
   - first: {fileID: 1107001156480710824}
     second:
     - {fileID: 1109926598297298282}
+  - first: {fileID: 1107184734721271530}
+    second:
+    - {fileID: 1109187643643523624}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 60, y: 12, z: 0}
   m_EntryPosition: {x: 48, y: 120, z: 0}

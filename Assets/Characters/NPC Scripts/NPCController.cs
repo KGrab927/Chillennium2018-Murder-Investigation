@@ -10,12 +10,15 @@ public class NPCController : MonoBehaviour {
 	private System.Random rnd;
 	private Animator ac;
 
+	[SerializeField]
+	int seed;
+
 	private float prev_time;
 
 	// Use this for initialization
 	void Start () {
 		ac = GetComponent<Animator>();
-		rnd = new System.Random();
+		rnd = new System.Random(seed);
 		interacting = false;
 		prev_time = Time.time;
 	}
