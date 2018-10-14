@@ -23,8 +23,10 @@ public class DialogueInteraction : MonoBehaviour {
 	GameObject dialogueContainer;
 	[SerializeField]
 	GameObject portrait;
+	[SerializeField]
+	GameObject portraitItem;
 
-    
+
 	void Start()
 	{
 		dialogueUI.SetActive(false);
@@ -51,7 +53,18 @@ public class DialogueInteraction : MonoBehaviour {
 	{
 		active = true;
 		interactable = obj.GetComponent<Interactable>();
-		portrait.GetComponent<Image>().sprite = interactable.portrait;
+		if(interactable.isPerson)
+		{
+			portrait.GetComponent<Image>().sprite = interactable.portrait;
+			portraitItem.SetActive(false);
+			portrait.SetActive(true);
+		}
+		else
+		{
+			portraitItem.GetComponent<Image>().sprite = interactable.portrait;
+			portraitItem.SetActive(true);
+			portrait.SetActive(false);
+		}
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
 		if (index == -1) {
