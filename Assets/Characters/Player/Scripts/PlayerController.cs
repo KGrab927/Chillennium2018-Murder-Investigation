@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
 				Input.ResetInputAxes();
 			}
 		}
-		if (Input.GetButtonDown("Depossess") && person != null) {
+		if (Input.GetButtonDown("Depossess") && person != null && !interacting) {
 			EndPossess();
 		}
 		if (closest && person != null) {

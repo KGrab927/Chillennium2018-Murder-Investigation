@@ -1,0 +1,885 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1125234321611530}
+  m_IsPrefabAsset: 1
+--- !u!1 &1125234321611530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4843179759773394}
+  - component: {fileID: 212470591243169598}
+  - component: {fileID: 95301090415665450}
+  - component: {fileID: 61723469616077182}
+  - component: {fileID: 114878393904711910}
+  - component: {fileID: 114435609722375014}
+  - component: {fileID: 114499385998317196}
+  - component: {fileID: 50165022303281324}
+  m_Layer: 0
+  m_Name: Dutchess
+  m_TagString: Possessable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1198857564860930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4589685304236678}
+  - component: {fileID: 212397184399584210}
+  m_Layer: 0
+  m_Name: Interaction Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4589685304236678
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198857564860930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.403, z: 0}
+  m_LocalScale: {x: 0.13822165, y: 0.13822165, z: 0.13822165}
+  m_Children: []
+  m_Father: {fileID: 4843179759773394}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4843179759773394
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.93, y: 3.96, z: -0.21875}
+  m_LocalScale: {x: 4.286427, y: 4.286427, z: 4.286427}
+  m_Children:
+  - {fileID: 4589685304236678}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50165022303281324
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!61 &61723469616077182
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.07216111}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.22, y: 0.32}
+    newSize: {x: 0.22, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.22, y: 0.17567778}
+  m_EdgeRadius: 0
+--- !u!95 &95301090415665450
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57a34c0022d77444b9de6c741c73c4c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114435609722375014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 22
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 200
+        y: 145
+        width: 150
+        height: 125
+      Text: Out of the kitchen? What reason does a rat have to leave its hole?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 412
+        y: 142
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 040000000500000006000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 628
+        y: 50
+        width: 150
+        height: 125
+      Text: Mademoiselle, please, I simply wish to know how the party received the
+        dinner. Did they find it to be excellent?
+      Type: 2
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 628
+        y: 197
+        width: 150
+        height: 125
+      Text: A rat?! I say mademe! Coming from an old croan who probably did the deed
+        herself!
+      Type: 2
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 340
+        width: 150
+        height: 125
+      Text: Psst. Do you know who did it? Who killed me?
+      Type: 2
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 818
+        y: 47
+        width: 150
+        height: 125
+      Text: Hmf, excellent? I dare say that a man died at that dinner. You woulnd't
+        know anything about that, would you?
+      Type: 0
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 978
+        y: 47
+        width: 150
+        height: 125
+      Text: u gay?
+      Type: 1
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 090000000a000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1137
+        y: 51
+        width: 150
+        height: 125
+      Text: You think that I had anything to do with that, Mademe? Certainly not!
+        I was in the kitchen preparing the feast!
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1136
+        y: 190
+        width: 150
+        height: 125
+      Text: A man died? You cannot blame my meal. After all, it was excellent!
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1296
+        y: 190
+        width: 150
+        height: 125
+      Text: Hmf, the meal was edible. I suppose I can say that. After all, I am still
+        here. Now then, are we done?
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1297
+        y: 51
+        width: 150
+        height: 125
+      Text: Yes, you were in the kitchen, that cannot be disputed. But the matter
+        at hand is not your food, but the man that died at the table.
+      Type: 0
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1457
+        y: 51
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 1618
+        y: 53
+        width: 150
+        height: 125
+      Text: Oui, oui. What is it you suggest then? If you do not suspect my cooking?
+      Type: 2
+      NodeType: 1
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1778
+        y: 53
+        width: 150
+        height: 125
+      Text: Oh I haven't the slightest idea. It wasn't me, but that Money Bags Mcgee,
+        I heard he has a competing company with the dead party. Maybe you should speak
+        to him, instead of bothering an old woman past her bedtime.
+      Type: 0
+      NodeType: 1
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1938
+        y: 53
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 1100000012000000
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 2109
+        y: 57
+        width: 150
+        height: 125
+      Text: When does a distinguished woman retire?
+      Type: 2
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 2105
+        y: 192
+        width: 150
+        height: 125
+      Text: Oui, Oui.
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 2269
+        y: 57
+        width: 150
+        height: 125
+      Text: Precisely at midnight, staying up any later isn't good for my complexion.
+      Type: 0
+      NodeType: 2
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 788
+        y: 197
+        width: 150
+        height: 125
+      Text: I have no business talking to such a foul mouthed accuser. Leave me in
+        peace servant!
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 790
+        y: 340
+        width: 150
+        height: 125
+      Text: What on earth are you talking about? Are you mad? Have you gotten into
+        the absynth? Or heaven forbid, have you forgotten that you are a FRENCH CHEF?
+        Do you speak to me until you have regained your sense!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 21
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 355
+        y: 139
+        width: 150
+        height: 125
+      Text: Ah, Mr. Money Bags Mcgee. How has your evening been thus far? Aside from
+        the obvious plight of course.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 515
+        y: 139
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000001100000013000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 698
+        y: 65
+        width: 150
+        height: 125
+      Text: Mhm hm hm, M-why excellent, simply excellent. A pity what happened earlier,
+        but the sooner the police arrive the sooner things will be sorted out.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 858
+        y: 65
+        width: 150
+        height: 125
+      Text: The autorities should help to solve some of this, true.
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 1018
+        y: 65
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000000f000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1172
+        y: 63
+        width: 150
+        height: 125
+      Text: Back to more amicable discussion, how are your relations?
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1332
+        y: 63
+        width: 150
+        height: 125
+      Text: They are getting along fine, my grand daughter in particular. If you should
+        know, she was being considerably courted by the dead party. He may have been
+        in possession of a company, but I could never have allowed her to marry someone
+        without any official status. The blood of the family must be maintained!
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1492
+        y: 63
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1653
+        y: 64
+        width: 150
+        height: 125
+      Text: It seems this man's untimely death comes as a benefit to you.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1813
+        y: 64
+        width: 150
+        height: 125
+      Text: Nothing more than a coincidence. Though I must say, it comes as a benefit
+        to you as well. With competition looming in the air, I'd say you would be
+        just as glad to get rid of it.
+      Type: 0
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1973
+        y: 64
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 2138
+        y: 65
+        width: 150
+        height: 125
+      Text: You think that I would resort to such matters because I cannot handle
+        some friendly competition? Hogwash!
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 2136
+        y: 197
+        width: 150
+        height: 125
+      Text: A rather convenient coincidence all the same. I think you did it!
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 2298
+        y: 65
+        width: 150
+        height: 125
+      Text: Indeed. What can be said is that a man is dead, and someone is to blame.
+        Have you been to the kitchen lately? I have heard from the staff that it is
+        in particular disarray.
+      Type: 0
+      NodeType: 2
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 2296
+        y: 197
+        width: 150
+        height: 125
+      Text: Until the authorities arrive I will have nothing more to say to you.
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1173
+        y: 196
+        width: 150
+        height: 125
+      Text: I can see this conversation going no further. I have some money to count,
+        and business to conduct.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1333
+        y: 196
+        width: 150
+        height: 125
+      Text: Hfm, there is no need to be so unpleasant. It was you who came to me,
+        not the other way around.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 695
+        y: 205
+        width: 150
+        height: 125
+      Text: Dreadful, absolutely dreadful! Have you seen the table setting? It is
+        not in the least bit acceptable!
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 855
+        y: 205
+        width: 150
+        height: 125
+      Text: Yes, yes, I do agree, but perhaps you should take these matters up with
+        the chef. Isn't he the one who planned the dinner?
+      Type: 0
+      NodeType: 2
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 696
+        y: 346
+        width: 150
+        height: 125
+      Text: Money, money, I have company things to think of--
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 856
+        y: 346
+        width: 150
+        height: 125
+      Text: Excuse me? It would seem that you are babbling and have forgotten your
+        head. At this point I'm not even sure that it is attached to your shoulders!
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - chef
+  - money
+--- !u!114 &114499385998317196
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction_string: dutchess
+  portrait: {fileID: 21300000, guid: 96d15bc39547370419f77fe78d4d2036, type: 3}
+  interact_icon: {fileID: 1198857564860930}
+  random_responses: 0
+--- !u!114 &114878393904711910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd10ffc69a01200479ecc9db15d5bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interacting: 0
+  seed: 2
+--- !u!212 &212397184399584210
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198857564860930}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b4272451dcd18014eacfb2f455b7d24b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.76, y: 2.73}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!212 &212470591243169598
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125234321611530}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3a60c0939e8d69e47a4e09d7d71f953b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.22, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

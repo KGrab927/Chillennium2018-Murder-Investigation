@@ -47,7 +47,12 @@ public class DialogueInteraction : MonoBehaviour {
 
 	public void StartInteraction(GameObject obj, string str, int random_responses)
 	{
-		if(random_responses > 0)
+		active = true;
+		interactable = obj.GetComponent<Interactable>();
+		portrait.GetComponent<Image>().sprite = interactable.portrait;
+		interactable.Interact();
+		dialogues = interactable.GetComponent<Dialogues>();
+		if (random_responses > 0)
 		{
 			Random.Range(0, random_responses);
 			dialogues.SetTree(random_responses.ToString());
@@ -56,11 +61,6 @@ public class DialogueInteraction : MonoBehaviour {
 		{
 			dialogues.SetTree(str);
 		}
-		active = true;
-		interactable = obj.GetComponent<Interactable>();
-		portrait.GetComponent<Image>().sprite = interactable.portrait;
-		interactable.Interact();
-		dialogues = interactable.GetComponent<Dialogues>();
 		dialogues.Reset();
 		dialogueText.text = dialogues.GetCurrentDialogue();
 		dialogueUI.SetActive(true);

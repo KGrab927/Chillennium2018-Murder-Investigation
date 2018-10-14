@@ -1,0 +1,879 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1563771136826886}
+  m_IsPrefabAsset: 1
+--- !u!1 &1563771136826886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4650447579647436}
+  - component: {fileID: 212911022850691344}
+  - component: {fileID: 95642114275460604}
+  - component: {fileID: 61823889601700506}
+  - component: {fileID: 114553558032026022}
+  - component: {fileID: 114122643936891166}
+  - component: {fileID: 114167541246580252}
+  - component: {fileID: 50372170512536388}
+  m_Layer: 0
+  m_Name: Chef
+  m_TagString: Possessable
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1746667740126904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4892296453494536}
+  - component: {fileID: 212640720122782404}
+  m_Layer: 0
+  m_Name: Interaction Icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4650447579647436
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.46, y: 17.43, z: -0.21875}
+  m_LocalScale: {x: 4.286427, y: 4.286427, z: 4.286427}
+  m_Children:
+  - {fileID: 4892296453494536}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4892296453494536
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746667740126904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.403, z: 0}
+  m_LocalScale: {x: 0.13822165, y: 0.13822165, z: 0.13822165}
+  m_Children: []
+  m_Father: {fileID: 4650447579647436}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50372170512536388
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!61 &61823889601700506
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.07216111}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.22, y: 0.32}
+    newSize: {x: 0.22, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.22, y: 0.17567778}
+  m_EdgeRadius: 0
+--- !u!95 &95642114275460604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61e468e0ee6e4104b84055c700d505a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114122643936891166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 25
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 130
+        y: 107
+        width: 150
+        height: 125
+      Text: Oui oui, hon hon. A guest of my dinner! How was it?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 290
+        y: 107
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000001500000017000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 470
+        y: 57
+        width: 150
+        height: 125
+      Text: It was excellent. Is everyone just as satisfied?
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 57
+        width: 150
+        height: 125
+      Text: Non monsuier. The bastard who died was not. It is just as well, that is
+        what happens when you insult French cooking!!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 790
+        y: 57
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 0500000013000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 964
+        y: 58
+        width: 150
+        height: 125
+      Text: It seems you feel strongly about the issue. What about the meal wasn't
+        to his liking? I myself coulnd't find a flaw in it!
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1124
+        y: 58
+        width: 150
+        height: 125
+      Text: Where to begin monsuier? His discontent started with the first course!
+        The monster insulted my baquettes, saying that they were soft! Insolent pig.
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1284
+        y: 58
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 0800000011000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1444
+        y: 60
+        width: 150
+        height: 125
+      Text: The baguettes you say? Why I thought they were perfect! As a connoisuer
+        myself I have had a few that were baked finer. But the first course, I mean,
+        it's a wonder that he made it through dinner!
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1604
+        y: 60
+        width: 150
+        height: 125
+      Text: What do you mean monsuier? He died in between the second and third courses.
+        Were you not sitting at the table with him?
+      Type: 0
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1764
+        y: 60
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b00000010000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1926
+        y: 66
+        width: 150
+        height: 125
+      Text: Oh-- Why yes I was present, I just had indulged in too much wine and was
+        too intent on the fabulous meal that you had served to even notice any of
+        the other guests!
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 2086
+        y: 66
+        width: 150
+        height: 125
+      Text: Too much wine you say? Hon hon. Are you not a man? There was barely any
+        wine at the table at all! A tragedy not to have the correct glasses.
+      Type: 0
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 2246
+        y: 66
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 2411
+        y: 66
+        width: 150
+        height: 125
+      Text: A shame to be true. Where is a good host when you need one?
+      Type: 2
+      NodeType: 1
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 2571
+        y: 66
+        width: 150
+        height: 125
+      Text: Hon hon. I would check the master bedroom if I were you. Surely someone
+        as foul as that has something to hide.
+      Type: 0
+      NodeType: 2
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1924
+        y: 204
+        width: 150
+        height: 125
+      Text: I wasn't paying all that much attention. I was too busy eyeing my own
+        gold pocket watch to even notice.
+      Type: 2
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1445
+        y: 195
+        width: 150
+        height: 125
+      Text: Hm hm, they were rather soft--
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1605
+        y: 195
+        width: 150
+        height: 125
+      Text: AWAY WITH YOU!!
+      Type: 0
+      NodeType: 2
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 966
+        y: 192
+        width: 150
+        height: 125
+      Text: So you killed the dead party?
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1126
+        y: 192
+        width: 150
+        height: 125
+      Text: Certainly not! He brought it upon himself, but I did not kill him. I was
+        in the kitchen! While you lounged and enjoyed my meal I had work to do!
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 470
+        y: 198
+        width: 150
+        height: 125
+      Text: Entirely too much salt! You really don't know how to balance a meal.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 198
+        width: 150
+        height: 125
+      Text: Imbecile! With such disregard you should join our unfortunate guest!
+      Type: 0
+      NodeType: 2
+      Parent: 21
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 470
+        y: 335
+        width: 150
+        height: 125
+      Text: Hon Hon, Louis the XIV could not have eaten better, non oui.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 18000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 335
+        width: 150
+        height: 125
+      Text: Do you insult me or are you drunk? It seems that you have forgotten who
+        standing here is French!
+      Type: 0
+      NodeType: 2
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 16
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 291
+        y: 131
+        width: 150
+        height: 125
+      Text: Good evening mademoiselle, I trust you found the dinner to your liking?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 451
+        y: 131
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000000c0000000e000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 642
+        y: 72
+        width: 150
+        height: 125
+      Text: It was fine, thank you. Although I must say, one of us did not think so.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 802
+        y: 72
+        width: 150
+        height: 125
+      Text: I should say not! That man should have kept to himself when it comes to
+        my craft!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 962
+        y: 72
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1129
+        y: 69
+        width: 150
+        height: 125
+      Text: I venture to ask, you were in the kitchen for the entire dinner, correct?
+        It seems as though you have something against this person in particular.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1289
+        y: 69
+        width: 150
+        height: 125
+      Text: Certainly! You cannot possibly claim that I was not in the kitchen! If
+        I had left, you would never have been served! Not even the wine would have
+        made it to your table!
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1449
+        y: 69
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 080000000a000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1632
+        y: 37
+        width: 150
+        height: 125
+      Text: I claim nothing in particular, your services for the evening were excellent.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1792
+        y: 37
+        width: 150
+        height: 125
+      Text: Merci. If you will excuse me mademe, I must return to my work. The kitchen
+        needs to be seen to. Hon hon.
+      Type: 0
+      NodeType: 2
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1630
+        y: 182
+        width: 150
+        height: 125
+      Text: You may not have left the kitchen but your meal did.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1790
+        y: 182
+        width: 150
+        height: 125
+      Text: I will have nothing more to say to you!
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 639
+        y: 213
+        width: 150
+        height: 125
+      Text: I wouldn't say it was the finest meal that I have ever indulged in, but
+        I suppose for some it was edible.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 799
+        y: 213
+        width: 150
+        height: 125
+      Text: Impertinent woman! My talents are wasted on you!
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 637
+        y: 352
+        width: 150
+        height: 125
+      Text: '*attempting to sound old* My teeth have a hard time, and I''ve lost a
+        marble--*'
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 797
+        y: 352
+        width: 150
+        height: 125
+      Text: Quoi? I have no time to deal with the senile...
+      Type: 0
+      NodeType: 2
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - money
+  - dutchess
+--- !u!114 &114167541246580252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interaction_string: chef
+  portrait: {fileID: 21300000, guid: b7f625508b24ac54793159fa54275f5a, type: 3}
+  interact_icon: {fileID: 1746667740126904}
+  random_responses: 0
+--- !u!114 &114553558032026022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd10ffc69a01200479ecc9db15d5bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interacting: 0
+  seed: 1
+--- !u!212 &212640720122782404
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1746667740126904}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b4272451dcd18014eacfb2f455b7d24b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.76, y: 2.73}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!212 &212911022850691344
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1563771136826886}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3a60c0939e8d69e47a4e09d7d71f953b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.22, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
