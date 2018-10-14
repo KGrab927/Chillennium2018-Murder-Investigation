@@ -55,11 +55,17 @@ public class PlayerController : MonoBehaviour
 			anim.SetFloat("walk_dir_y", moveVertical);
 		}
 
-		GameObject[] interactables = GameObject.FindGameObjectsWithTag("Possessable");
+		GameObject[] interactables = null;
 		GameObject closest = null;
 		float min_dist = pickup_range;
+		interactables = GameObject.FindGameObjectsWithTag("Possessable");
 		foreach (GameObject i in interactables)
 		{
+			i.GetComponent<Interactable>().HideInteractableIcon();
+			if (i == person)
+			{
+				continue;
+			}
 			Vector3 diff = (person == null) ? i.transform.position - transform.position : i.transform.position - person.transform.position;
 			float dist = diff.magnitude;
 			if (dist < pickup_range && dist < min_dist)
@@ -75,11 +81,12 @@ public class PlayerController : MonoBehaviour
 			}
 		}
 
-		if (Input.GetButtonDown("Interact") && person != null && !interacting)
+		if (person != null && !interacting)
 		{
 			interactables = GameObject.FindGameObjectsWithTag("Interactable");
 			foreach (GameObject i in interactables)
 			{
+				i.GetComponent<Interactable>().HideInteractableIcon();
 				if (i == person)
 				{
 					continue;
@@ -98,16 +105,25 @@ public class PlayerController : MonoBehaviour
 					}
 				}
 			}
-			if (closest)
+			if(closest)
 			{
+				closest.GetComponent<Interactable>().ShowInteractableIcon();
+			}
+			if (closest && Input.GetButtonDown("Interact"))
+			{
+				Interactable inter = person.GetComponent<Interactable>();
 				interacting = true;
 				Input.ResetInputAxes();
-				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, person.GetComponent<Interactable>().interaction_string);
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, inter.interaction_string, inter.random_responses);
 			}
 		} 
-		else if(Input.GetButtonDown("Interact") && person == null && !interacting)
+		else if(person == null && !interacting)
 		{
 			if (closest)
+			{
+				closest.GetComponent<Interactable>().ShowInteractableIcon();
+			}
+			if (closest && Input.GetButtonDown("Interact"))
 			{
 				person = closest;
 				rb2d.isKinematic = true;
