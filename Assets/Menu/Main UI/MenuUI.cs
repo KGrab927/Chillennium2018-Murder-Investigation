@@ -9,8 +9,10 @@ public class MenuUI : MonoBehaviour
 {
 
     public AudioClip[] thunderSound;
-
     public AudioSource thunderSource;
+
+    public AudioClip playerSelect;
+    public AudioSource playerSelSource;
 
     public Animator lightningFlash;
 
@@ -66,6 +68,13 @@ public class MenuUI : MonoBehaviour
             Debug.Log(Num);
             yield return new WaitForSeconds(20f);
         }
+
+    }
+
+    public void playClicked()
+    {
+        playerSelSource.clip = playerSelect;
+        playerSelSource.Play();
 
     }
 }
