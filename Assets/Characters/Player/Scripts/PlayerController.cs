@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
 				Interactable inter = person.GetComponent<Interactable>();
 				interacting = true;
 				Input.ResetInputAxes();
-				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, inter.interaction_string, inter.random_responses);
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, inter.interaction_string, closest.GetComponent<Interactable>().random_responses);
 			}
 		} 
 		else if(person == null && !interacting)

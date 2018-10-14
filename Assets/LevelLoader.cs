@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class LevelLoader : MonoBehaviour {
 	public void OnFadeComplete()
 	{
-		Scene sceneToLoad = SceneManager.GetSceneByName("Level2");
-		SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
+		SceneManager.LoadScene("PickScene", LoadSceneMode.Single);
 	}
 }
