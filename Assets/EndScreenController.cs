@@ -64,7 +64,7 @@ public class EndScreenController : MonoBehaviour {
 		} else
 		{
 			Scene sceneToLoad = SceneManager.GetSceneByName("MainMenu");
-			SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Additive);
+			SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Single);
 		}
 
 	}
