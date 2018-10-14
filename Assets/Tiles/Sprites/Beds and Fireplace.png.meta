@@ -1,11 +1,7 @@
 fileFormatVersion: 2
-guid: 11c21def5f776f5428ada227fc2b399a
+guid: 58945ddd9996e3a4fa5e55b52bacd741
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Beds and Fireplace_0
-    21300002: Beds and Fireplace_1
-    21300004: Beds and Fireplace_2
-    21300006: Beds and Fireplace_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -44,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,104 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Beds and Fireplace_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 381
-        width: 195
-        height: 99
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc28284a3087c264bba64b7258bd13d5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beds and Fireplace_1
-      rect:
-        serializedVersion: 2
-        x: 451
-        y: 412
-        width: 45
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59e4d1b818ff13b4b866889552061315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beds and Fireplace_2
-      rect:
-        serializedVersion: 2
-        x: 339
-        y: 12
-        width: 195
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da8209758b8f18f47b4fdf91aa0c6cee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Beds and Fireplace_3
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 12
-        width: 195
-        height: 195
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b6761cffd05e1c44b23966db8907f41
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 567d19a5248e97c469bb33dce7140161
+    spriteID: d607d928f9d4bcc4585d41edb7acb808
     vertices: []
     indices: 
     edges: []

@@ -12,6 +12,9 @@ public class opening : MonoBehaviour {
 
 	string[] order;
 
+	[SerializeField]
+	Animator anim;
+
 	// Use this for initialization
 	void Start () {
 		players = GameObject.FindGameObjectsWithTag("Player");
@@ -49,5 +52,13 @@ public class opening : MonoBehaviour {
 			FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(deadPlayer, "dead player", 0, 0);
 			currDialogIndex++;
 		}
+
+		if(!spin && currDialogIndex == 1 && !deadPlayer.GetComponent<Interactable>().interacting)
+		{
+			anim.SetTrigger("FadeOut");
+		}
+
+
+
 	}
 }

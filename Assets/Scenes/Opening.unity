@@ -889,6 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9feaa812fd42039489f4b99b24e2b538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 516262012}
 --- !u!1001 &471481542
 Prefab:
   m_ObjectHideFlags: 0
@@ -1037,8 +1038,8 @@ GameObject:
   - component: {fileID: 516262010}
   - component: {fileID: 516262014}
   - component: {fileID: 516262013}
-  - component: {fileID: 516262012}
   - component: {fileID: 516262011}
+  - component: {fileID: 516262012}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1068,13 +1069,12 @@ RectTransform:
 --- !u!114 &516262011
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114430933473017060, guid: 2edb75244b68f3640b27b143f62dcb49,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 516262009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd62a71600e6e9f488f8aa2a0d1972b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dfd2c5cd04851f43bc55bad72ff2f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &516262012
@@ -1087,7 +1087,7 @@ Animator:
   m_GameObject: {fileID: 516262009}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e7297a905b0f82d47a839a426bf41a64, type: 2}
+  m_Controller: {fileID: 22100000, guid: 1434574973b65504896d3e502f060ed9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3421,6 +3421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300044, guid: bc1fe2e8a0286724ab588828b03f25f6, type: 3}
   interact_icon: {fileID: 553742228}
