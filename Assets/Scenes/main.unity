@@ -1128,6 +1128,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: TabList.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
         type: 2}
       propertyPath: Set.Array.data[0].Windows.Array.size
@@ -1139,6 +1149,21 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
         type: 2}
       propertyPath: Set.Array.data[2].Windows.Array.size
       value: 1
@@ -1223,6 +1248,137 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 8af63e359a711a04791941ca2247b103,
         type: 3}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].FirstWindow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: CurrentSet
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Size.x
+      value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Size.y
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Size.width
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Size.height
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Text
+      value: Apparently the Scotsman has gotten here first.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.data[0].Parent
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Size.x
+      value: 153
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Size.y
+      value: 152
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Size.width
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Size.height
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Text
+      value: '*despite your urges the person you are possessing drinks the rest of
+        the scotch*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.data[0].Parent
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Size.x
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Size.y
+      value: 136
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Size.width
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Size.height
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Text
+      value: I've seen finer scotch.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.data[0].Parent
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: TabList.Array.data[0]
+      value: dutchess
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: TabList.Array.data[1]
+      value: chef
+      objectReference: {fileID: 0}
+    - target: {fileID: 114693822024676188, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: TabList.Array.data[2]
+      value: money
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
     - {fileID: 114482923719072660, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
@@ -1976,7 +2132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSelect: {fileID: 8300000, guid: ee35393c4604fa64cbda70a1eed88f93, type: 3}
-  playerSelSource: {fileID: 2097952827}
+  playerSelSource: {fileID: 0}
 --- !u!1001 &1592023791
 Prefab:
   m_ObjectHideFlags: 0
@@ -2156,7 +2312,7 @@ Prefab:
         type: 2}
       propertyPath: clockSource
       value: 
-      objectReference: {fileID: 2096647812}
+      objectReference: {fileID: 0}
     - target: {fileID: 114464717175767656, guid: 2edb75244b68f3640b27b143f62dcb49,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
