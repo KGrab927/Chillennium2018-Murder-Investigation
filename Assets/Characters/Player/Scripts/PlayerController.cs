@@ -80,31 +80,31 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 		}
+		interactables = GameObject.FindGameObjectsWithTag("Interactable");
+		foreach (GameObject i in interactables)
+		{
+			i.GetComponent<Interactable>().HideInteractableIcon();
+			if (i == person)
+			{
+				continue;
+			}
+			Vector3 diff = i.transform.position - ((person != null) ? person.transform.position : transform.position);
+			float dist = diff.magnitude;
+			if (dist < pickup_range && dist < min_dist)
+			{
+				if (diff.x > 0 && dir_x > 0 ||
+					diff.x < 0 && dir_x < 0 ||
+					diff.y > 0 && dir_y > 0 ||
+					diff.y < 0 && dir_y < 0)
+				{
+					min_dist = dist;
+					closest = i;
+				}
+			}
+		}
 
 		if (person != null && !interacting)
 		{
-			interactables = GameObject.FindGameObjectsWithTag("Interactable");
-			foreach (GameObject i in interactables)
-			{
-				i.GetComponent<Interactable>().HideInteractableIcon();
-				if (i == person)
-				{
-					continue;
-				}
-				Vector3 diff = i.transform.position - person.transform.position;
-				float dist = diff.magnitude;
-				if (dist < pickup_range && dist < min_dist)
-				{
-					if (diff.x > 0 && dir_x > 0 ||
-					   diff.x < 0 && dir_x < 0 ||
-					   diff.y > 0 && dir_y > 0 ||
-					   diff.y < 0 && dir_y < 0)
-					{
-						min_dist = dist;
-						closest = i;
-					}
-				}
-			}
 			if(closest)
 			{
 				closest.GetComponent<Interactable>().ShowInteractableIcon();
@@ -119,11 +119,17 @@ public class PlayerController : MonoBehaviour
 		} 
 		else if(person == null && !interacting)
 		{
-			if (closest)
+			if (closest && closest.GetComponent<NPCController>())
 			{
 				closest.GetComponent<Interactable>().ShowInteractableIcon();
 			}
-			if (closest && Input.GetButtonDown("Interact"))
+			if (closest && closest.tag == "Interactable" && Input.GetButtonDown("Interact") && closest.GetComponent<NPCController>()) {
+				Interactable inter = closest.GetComponent<Interactable>();
+				interacting = true;
+				Input.ResetInputAxes();
+				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, "nullperson", -1);
+			}
+			else if (closest && Input.GetButtonDown("Interact"))
 			{
 				person = closest;
 				rb2d.isKinematic = true;
