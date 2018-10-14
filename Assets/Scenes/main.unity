@@ -282,7 +282,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1209218752434510, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 114270187480398712, guid: 4d461dd2c365ff0418e5fda09472df31,
         type: 2}
@@ -305,6 +305,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 862df1492e6ebcd4f941b22526e06d91,
         type: 3}
+    - target: {fileID: 114270187480398712, guid: 4d461dd2c365ff0418e5fda09472df31,
+        type: 2}
+      propertyPath: random_responses
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95031306677194154, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
     - {fileID: 114616171344687790, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
@@ -328,27 +333,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 2
+  - CurrentId: 1
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 342
-        y: 119
+        x: 105
+        y: 106
         width: 150
         height: 125
-      Text: '*murmurs*'
+      Text: '*burp*'
       Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 0
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 126
+        y: 144
+        width: 150
+        height: 125
+      Text: '*His breath smells of scotch*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 59
+        y: 77
+        width: 150
+        height: 125
+      Text: '*We should let him sleep. I don''t think he will wake up anyways...*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
   TabList:
   - 0
+  - 1
+  - 2
+--- !u!114 &412527511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412527504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd10ffc69a01200479ecc9db15d5bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interacting: 0
+  seed: 786
+--- !u!95 &412527512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412527504}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8cdeb95df33a19c4ab6aa609ed62bc37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &583780849
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,7 +921,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1209218752434510, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 114057324517562416, guid: 4d461dd2c365ff0418e5fda09472df31,
         type: 2}
@@ -879,6 +953,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 0.45
       objectReference: {fileID: 0}
+    - target: {fileID: 114270187480398712, guid: 4d461dd2c365ff0418e5fda09472df31,
+        type: 2}
+      propertyPath: random_responses
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114616171344687790, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
     - {fileID: 95031306677194154, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
@@ -909,20 +988,109 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 184
-        y: 100
+        x: 101
+        y: 138
         width: 150
         height: 125
-      Text: '*whispers*'
+      Text: Hm, it would seem the chandalier needs some dusting.
       Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 0
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 129
+        y: 127
+        width: 150
+        height: 125
+      Text: I wonder where the sullery maid has gone off to now.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 123
+        y: 165
+        width: 150
+        height: 125
+      Text: That idiot of a chef left the kitchen in an absolutely horrendous state.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 131
+        y: 121
+        width: 150
+        height: 125
+      Text: Hmm? Perhaps you should visit the dining room. That is where our guest
+        began showing symptoms.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
   TabList:
   - 0
+  - 1
+  - 2
+  - 3
+--- !u!114 &1114762827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114762820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd10ffc69a01200479ecc9db15d5bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interacting: 0
+  seed: 456
+--- !u!95 &1114762828
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1114762820}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98819d9cede731b40ad655610b10cff7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1343400956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1418,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1209218752434510, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Interactable
       objectReference: {fileID: 0}
     - target: {fileID: 114270187480398712, guid: 4d461dd2c365ff0418e5fda09472df31,
         type: 2}
@@ -1293,6 +1461,11 @@ Prefab:
       propertyPath: m_SpriteTilingProperty.newSize.y
       value: 0.43
       objectReference: {fileID: 0}
+    - target: {fileID: 114270187480398712, guid: 4d461dd2c365ff0418e5fda09472df31,
+        type: 2}
+      propertyPath: random_responses
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95031306677194154, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
     - {fileID: 114616171344687790, guid: 4d461dd2c365ff0418e5fda09472df31, type: 2}
@@ -1323,20 +1496,89 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 194
-        y: 141
+        x: 130
+        y: 102
         width: 150
         height: 125
-      Text: What has happened? Who could have done this?
+      Text: A brazen act, to murder someone when a man of God is present.
       Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 0
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 117
+        y: 187
+        width: 150
+        height: 125
+      Text: I must return to the abbey by midnight. I do hope the police arrive soon.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 99
+        y: 149
+        width: 150
+        height: 125
+      Text: '*humming in Catholic*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
   TabList:
   - 0
+  - 1
+  - 2
+--- !u!114 &1835438049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835438042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd10ffc69a01200479ecc9db15d5bd4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interacting: 0
+  seed: 5465
+--- !u!95 &1835438050
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835438042}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b9ad499baca63c43996eb66721787b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2020427819
 Prefab:
   m_ObjectHideFlags: 0
