@@ -63,7 +63,7 @@ public class EndScreenController : MonoBehaviour {
 			anim.SetTrigger("FadeIn");
 		} else
 		{
-			SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+			SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
 		}
 
 	}
