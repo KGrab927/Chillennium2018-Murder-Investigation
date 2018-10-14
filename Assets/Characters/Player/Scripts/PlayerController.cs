@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
 				Input.ResetInputAxes();
 				FindObjectsOfType<DialogueInteraction>()[0].StartInteraction(closest, "nullperson", -1);
 			}
-			else if (closest && Input.GetButtonDown("Interact"))
+			else if (closest && Input.GetButtonDown("Interact") && closest.GetComponent<NPCController>())
 			{
 				person = closest;
 				rb2d.isKinematic = true;

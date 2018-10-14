@@ -340,8 +340,26 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 105
-        y: 106
+        x: 261
+        y: 152
+        width: 150
+        height: 125
+      Text: '*You cannot possess this person.*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 239
+        y: 95
         width: 150
         height: 125
       Text: '*burp*'
@@ -358,11 +376,11 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 126
-        y: 144
+        x: 323
+        y: 106
         width: 150
         height: 125
-      Text: '*His breath smells of scotch*'
+      Text: '*We shouldn''t wake him.. He probably wouldn''t get up anyways...*'
       Type: 0
       NodeType: 0
       Parent: -1
@@ -376,19 +394,20 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 59
-        y: 77
+        x: 297
+        y: 89
         width: 150
         height: 125
-      Text: '*We should let him sleep. I don''t think he will wake up anyways...*'
+      Text: zzzzzz.....
       Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 2
+  CurrentSet: 3
   TabList:
+  - nullperson
   - 0
   - 1
   - 2
@@ -1054,12 +1073,31 @@ MonoBehaviour:
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 2
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 140
+        y: 160
+        width: 150
+        height: 125
+      Text: '*You cannot possess this person.*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 3
   TabList:
   - 0
   - 1
   - 2
   - 3
+  - nullperson
 --- !u!114 &1114762827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1496,11 +1534,11 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 130
-        y: 102
+        x: 222
+        y: 146
         width: 150
         height: 125
-      Text: A brazen act, to murder someone when a man of God is present.
+      Text: '*This person cannot be possessed.*'
       Type: 0
       NodeType: 0
       Parent: -1
@@ -1514,11 +1552,11 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 117
-        y: 187
+        x: 319
+        y: 105
         width: 150
         height: 125
-      Text: I must return to the abbey by midnight. I do hope the police arrive soon.
+      Text: '*humming in cathloic*'
       Type: 0
       NodeType: 0
       Parent: -1
@@ -1532,19 +1570,39 @@ MonoBehaviour:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 99
-        y: 149
+        x: 369
+        y: 140
         width: 150
         height: 125
-      Text: '*humming in Catholic*'
+      Text: How could someone do this? Especially with a man of God around.
       Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
       Connections: 
-  CurrentSet: 2
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 371
+        y: 161
+        width: 150
+        height: 125
+      Text: I must be back at the Abbey by midnight... I do hope that the police arrive
+        soon.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 3
   TabList:
+  - nullperson
   - 0
   - 1
   - 2
