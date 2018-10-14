@@ -5,6 +5,9 @@ using UnityEngine;
 public class Interactable : MonoBehaviour {
 	public string interaction_string;
 	public Sprite portrait;
+	[SerializeField]
+	GameObject interact_icon;
+	public int random_responses;
 
 	public void Interact()
 	{
@@ -21,5 +24,13 @@ public class Interactable : MonoBehaviour {
 		{
 			controller.interacting = false;
 		}
+	}
+	public void ShowInteractableIcon()
+	{
+		interact_icon.SetActive(true);
+	}
+	public void HideInteractableIcon()
+	{
+		interact_icon.SetActive(false);
 	}
 }
