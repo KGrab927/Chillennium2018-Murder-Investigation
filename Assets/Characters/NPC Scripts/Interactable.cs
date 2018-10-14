@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour {
+	public bool interacting = false;
 	public string interaction_string;
 	public Sprite portrait;
 	[SerializeField]
@@ -16,6 +17,7 @@ public class Interactable : MonoBehaviour {
 		{
 			controller.interacting = true;
 		}
+		interacting = true;
 	}
 	public void EndInteract()
 	{
@@ -24,6 +26,7 @@ public class Interactable : MonoBehaviour {
 		{
 			controller.interacting = false;
 		}
+		interacting = false;
 	}
 	public void ShowInteractableIcon()
 	{
