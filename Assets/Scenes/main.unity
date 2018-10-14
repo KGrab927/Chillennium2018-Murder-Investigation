@@ -460,133 +460,219 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 27
+  - CurrentId: 22
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 333
-        y: 204
+        x: 200
+        y: 145
         width: 150
         height: 125
       Text: Out of the kitchen? What reason does a rat have to leave its hole?
-      Type: 1
+      Type: 0
       NodeType: 0
       Parent: -1
       Trigger: 0
       TriggerText: 
-      Connections: 090000000b0000000d000000
-    - ID: 9
+      Connections: 03000000
+    - ID: 3
       Size:
         serializedVersion: 2
-        x: 500
-        y: 59
-        width: 150
-        height: 125
-      Text: Mademoiselle, please, I simply wish to know how the party received the
-        dinner. Did they find it to be execellent?
-      Type: 2
-      NodeType: 1
-      Parent: 0
-      Trigger: 0
-      TriggerText: 
-      Connections: 18000000
-    - ID: 10
-      Size:
-        serializedVersion: 2
-        x: 772
-        y: 55
+        x: 412
+        y: 142
         width: 150
         height: 125
       Text: 
       Type: 1
       NodeType: 1
-      Parent: 9
+      Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 0f00000011000000
-    - ID: 11
+      Connections: 040000000500000006000000
+    - ID: 4
       Size:
         serializedVersion: 2
-        x: 635
-        y: 217
+        x: 628
+        y: 50
+        width: 150
+        height: 125
+      Text: Mademoiselle, please, I simply wish to know how the party received the
+        dinner. Did they find it to be excellent?
+      Type: 2
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 628
+        y: 197
         width: 150
         height: 125
       Text: A rat?! I say mademe! Coming from an old croan who probably did the deed
         herself!
       Type: 2
       NodeType: 1
-      Parent: 0
+      Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 0c000000
-    - ID: 12
+      Connections: 14000000
+    - ID: 6
       Size:
         serializedVersion: 2
-        x: 866
-        y: 229
-        width: 150
-        height: 125
-      Text: I have no business talking to such a foul mouthed accuser. Leave me in
-        peace servant!
-      Type: 0
-      NodeType: 2
-      Parent: 11
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 13
-      Size:
-        serializedVersion: 2
-        x: 685
-        y: 375
+        x: 630
+        y: 340
         width: 150
         height: 125
       Text: Psst. Do you know who did it? Who killed me?
       Type: 2
       NodeType: 1
-      Parent: 0
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 15000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 818
+        y: 47
+        width: 150
+        height: 125
+      Text: Hmf, excellent? I dare say that a man died at that dinner. You woulnd't
+        know anything about that, would you?
+      Type: 0
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 978
+        y: 47
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 090000000a000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1137
+        y: 51
+        width: 150
+        height: 125
+      Text: You think that I had anything to do with that, Mademe? Certainly not!
+        I was in the kitchen preparing the feast!
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1136
+        y: 190
+        width: 150
+        height: 125
+      Text: A man died? You cannot blame my meal. After all, it was excellent!
+      Type: 2
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1296
+        y: 190
+        width: 150
+        height: 125
+      Text: Hmf, the meal was edible. I suppose I can say that. After all, I am still
+        here. Now then, are we done?
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 1297
+        y: 51
+        width: 150
+        height: 125
+      Text: Yes, you were in the kitchen, that cannot be disputed. But the matter
+        at hand is not your food, but the man that died at the table.
+      Type: 0
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 1457
+        y: 51
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 12
       Trigger: 0
       TriggerText: 
       Connections: 0e000000
     - ID: 14
       Size:
         serializedVersion: 2
-        x: 987
-        y: 369
+        x: 1618
+        y: 53
         width: 150
         height: 125
-      Text: What on earth are you talking about? Are you mad? Have you gotten into
-        the absynth? Or heaven forbid, have you forgotten that you are a FRENCH CHEF?
-        Do not speak to me until you have regained your sense!
-      Type: 0
-      NodeType: 2
+      Text: Oui, oui. What is it you suggest then? If you do not suspect my cooking?
+      Type: 2
+      NodeType: 1
       Parent: 13
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 0f000000
     - ID: 15
       Size:
         serializedVersion: 2
-        x: 968
-        y: 45
+        x: 1778
+        y: 53
         width: 150
         height: 125
-      Text: You think I had anything to do with that, Mademe? Certainly not! I was
-        in the kitchen preparing the feast!
-      Type: 2
+      Text: Oh I haven't the slightest idea. It wasn't me, but that Money Bags Mcgee,
+        I heard he has a competing company with the dead party. Maybe you should speak
+        to him, instead of bothering an old woman past her bedtime.
+      Type: 0
       NodeType: 1
-      Parent: 10
+      Parent: 14
       Trigger: 0
       TriggerText: 
-      Connections: 19000000
+      Connections: 10000000
     - ID: 16
       Size:
         serializedVersion: 2
-        x: 1302
-        y: 63
+        x: 1938
+        y: 53
         width: 150
         height: 125
       Text: 
@@ -595,30 +681,358 @@ MonoBehaviour:
       Parent: 15
       Trigger: 0
       TriggerText: 
-      Connections: 13000000
+      Connections: 1100000012000000
     - ID: 17
       Size:
         serializedVersion: 2
-        x: 1092
-        y: 207
+        x: 2109
+        y: 57
         width: 150
         height: 125
-      Text: A man died? You cannot blame my meal. Afterall, it was excellent!
+      Text: When does a distinguished woman retire?
+      Type: 2
+      NodeType: 1
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 13000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 2105
+        y: 192
+        width: 150
+        height: 125
+      Text: Oui, Oui.
+      Type: 2
+      NodeType: 2
+      Parent: 16
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 2269
+        y: 57
+        width: 150
+        height: 125
+      Text: Precisely at midnight, staying up any later isn't good for my complexion.
+      Type: 0
+      NodeType: 2
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 788
+        y: 197
+        width: 150
+        height: 125
+      Text: I have no business talking to such a foul mouthed accuser. Leave me in
+        peace servant!
+      Type: 0
+      NodeType: 2
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 790
+        y: 340
+        width: 150
+        height: 125
+      Text: What on earth are you talking about? Are you mad? Have you gotten into
+        the absynth? Or heaven forbid, have you forgotten that you are a FRENCH CHEF?
+        Do you speak to me until you have regained your sense!
+      Type: 0
+      NodeType: 2
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 21
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 355
+        y: 139
+        width: 150
+        height: 125
+      Text: Ah, Mr. Money Bags Mcgee. How has your evening been thus far? Aside from
+        the obvious plight of course.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 515
+        y: 139
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000001100000013000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 698
+        y: 65
+        width: 150
+        height: 125
+      Text: Mhm hm hm, M-why excellent, simply excellent. A pity what happened earlier,
+        but the sooner the police arrive the sooner things will be sorted out.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 858
+        y: 65
+        width: 150
+        height: 125
+      Text: The autorities should help to solve some of this, true.
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 1018
+        y: 65
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000000f000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1172
+        y: 63
+        width: 150
+        height: 125
+      Text: Back to more amicable discussion, how are your relations?
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1332
+        y: 63
+        width: 150
+        height: 125
+      Text: They are getting along fine, my grand daughter in particular. If you should
+        know, she was being considerably courted by the dead party. He may have been
+        in possession of a company, but I could never have allowed her to marry someone
+        without any official status. The blood of the family must be maintained!
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1492
+        y: 63
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1653
+        y: 64
+        width: 150
+        height: 125
+      Text: It seems this man's untimely death comes as a benefit to you.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1813
+        y: 64
+        width: 150
+        height: 125
+      Text: Nothing more than a coincidence. Though I must say, it comes as a benefit
+        to you as well. With competition looming in the air, I'd say you would be
+        just as glad to get rid of it.
+      Type: 0
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1973
+        y: 64
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b0000000c000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 2138
+        y: 65
+        width: 150
+        height: 125
+      Text: You think that I would resort to such matters because I cannot handle
+        some friendly competition? Hogwash!
       Type: 2
       NodeType: 1
       Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 2136
+        y: 197
+        width: 150
+        height: 125
+      Text: A rather convenient coincidence all the same. I think you did it!
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 2298
+        y: 65
+        width: 150
+        height: 125
+      Text: Indeed. What can be said is that a man is dead, and someone is to blame.
+        Have you been to the kitchen lately? I have heard from the staff that it is
+        in particular disarray.
+      Type: 0
+      NodeType: 2
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 2296
+        y: 197
+        width: 150
+        height: 125
+      Text: Until the authorities arrive I will have nothing more to say to you.
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 1173
+        y: 196
+        width: 150
+        height: 125
+      Text: I can see this conversation going no further. I have some money to count,
+        and business to conduct.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 10000000
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1333
+        y: 196
+        width: 150
+        height: 125
+      Text: Hfm, there is no need to be so unpleasant. It was you who came to me,
+        not the other way around.
+      Type: 0
+      NodeType: 2
+      Parent: 15
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 695
+        y: 205
+        width: 150
+        height: 125
+      Text: Dreadful, absolutely dreadful! Have you seen the table setting? It is
+        not in the least bit acceptable!
+      Type: 2
+      NodeType: 1
+      Parent: 1
       Trigger: 0
       TriggerText: 
       Connections: 12000000
     - ID: 18
       Size:
         serializedVersion: 2
-        x: 1208
-        y: 359
+        x: 855
+        y: 205
         width: 150
         height: 125
-      Text: Hmf, the meal was edible. I suppose I can say that. After all, I am still
-        here. Now then, are we done?
+      Text: Yes, yes, I do agree, but perhaps you should take these matters up with
+        the chef. Isn't he the one who planned the dinner?
       Type: 0
       NodeType: 2
       Parent: 17
@@ -628,122 +1042,36 @@ MonoBehaviour:
     - ID: 19
       Size:
         serializedVersion: 2
-        x: 1356
-        y: 64
+        x: 696
+        y: 346
         width: 150
         height: 125
-      Text: Oui, Oui. What is it you suggest then? If you do not suspect my cooking?
+      Text: Money, money, I have company things to think of--
       Type: 2
       NodeType: 1
-      Parent: 16
-      Trigger: 0
-      TriggerText: 
-      Connections: 1a000000
-    - ID: 20
-      Size:
-        serializedVersion: 2
-        x: 1666
-        y: 64
-        width: 150
-        height: 125
-      Text: 
-      Type: 1
-      NodeType: 1
-      Parent: 19
-      Trigger: 0
-      TriggerText: 
-      Connections: 1500000016000000
-    - ID: 21
-      Size:
-        serializedVersion: 2
-        x: 1760
-        y: 258
-        width: 150
-        height: 125
-      Text: Oui, Oui.
-      Type: 2
-      NodeType: 2
-      Parent: 20
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 22
-      Size:
-        serializedVersion: 2
-        x: 1559
-        y: 242
-        width: 150
-        height: 125
-      Text: When does a distinguished woman retire?
-      Type: 2
-      NodeType: 1
-      Parent: 20
-      Trigger: 0
-      TriggerText: 
-      Connections: 17000000
-    - ID: 23
-      Size:
-        serializedVersion: 2
-        x: 1491
-        y: 389
-        width: 150
-        height: 125
-      Text: Precisely at midnight, staying up any later isn't good for my complexion.
-      Type: 0
-      NodeType: 2
-      Parent: 22
-      Trigger: 0
-      TriggerText: 
-      Connections: 
-    - ID: 24
-      Size:
-        serializedVersion: 2
-        x: 684
-        y: 50
-        width: 150
-        height: 125
-      Text: Hmf, excellent? I dare say that a man died at that dinner. You wouldn't
-        know anything about that, would you?
-      Type: 0
-      NodeType: 1
-      Parent: 9
-      Trigger: 0
-      TriggerText: 
-      Connections: 0a000000
-    - ID: 25
-      Size:
-        serializedVersion: 2
-        x: 1136
-        y: 49
-        width: 150
-        height: 125
-      Text: Yes, you were in the kitchen, that cannot be disputed. But the matter
-        at hand is not your food, but the man that died at the table.
-      Type: 0
-      NodeType: 1
-      Parent: 15
-      Trigger: 0
-      TriggerText: 
-      Connections: 10000000
-    - ID: 26
-      Size:
-        serializedVersion: 2
-        x: 1516
-        y: 64
-        width: 150
-        height: 125
-      Text: Oh I haven't the slightest idea. It wasn't me, but that Money Bags Mcgee,
-        I heard he has a competing company with the dead party. Maybe you should try
-        speaking to him instead of bothering an old woman past her bedtime.
-      Type: 0
-      NodeType: 1
-      Parent: 19
+      Parent: 1
       Trigger: 0
       TriggerText: 
       Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 856
+        y: 346
+        width: 150
+        height: 125
+      Text: Excuse me? It would seem that you are babbling and have forgotten your
+        head. At this point I'm not even sure that it is attached to your shoulders!
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
   CurrentSet: 0
   TabList:
-  - interaction
+  - chef
+  - money
 --- !u!114 &591971248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,18 +1254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 8
+  - CurrentId: 16
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 333
-        y: 204
+        x: 397
+        y: 73
         width: 150
         height: 125
-      Text: Howdy! I'm a big dodo head
+      Text: Yes? For whatever could you want? I am a very busy man.
       Type: 0
       NodeType: 0
       Parent: -1
@@ -947,104 +1275,464 @@ MonoBehaviour:
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 566
-        y: 214
+        x: 557
+        y: 73
         width: 150
         height: 125
-      Text: u gay?
+      Text: 
       Type: 1
       NodeType: 1
       Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 020000000300000004000000
+      Connections: 020000000c0000000e000000
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 1259
-        y: 276
+        x: 719
+        y: 74
         width: 150
         height: 125
-      Text: end 2
+      Text: Hon hon monsuier, as you know I've been busy the entire evening, but I
+        was wondering if you had taken time to venture the estate?
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 03000000
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 745
-        y: 121
+        x: 879
+        y: 74
         width: 150
         height: 125
-      Text: 1
-      Type: 2
+      Text: Oh-ho! Yes, it is important for a man to know his competition. I haven't
+        left a single drawer unchecked.
+      Type: 0
       NodeType: 1
-      Parent: 1
+      Parent: 2
       Trigger: 0
       TriggerText: 
-      Connections: 06000000
+      Connections: 04000000
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 730
-        y: 364
+        x: 1039
+        y: 74
         width: 150
         height: 125
-      Text: 2
-      Type: 2
+      Text: 
+      Type: 1
       NodeType: 1
-      Parent: 1
+      Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 05000000
+      Connections: 050000000a000000
     - ID: 5
       Size:
         serializedVersion: 2
-        x: 890
-        y: 364
+        x: 1202
+        y: 46
         width: 150
         height: 125
-      Text: end 3
-      Type: 0
-      NodeType: 2
+      Text: Anything to catch your interest?
+      Type: 2
+      NodeType: 1
       Parent: 4
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 06000000
     - ID: 6
       Size:
         serializedVersion: 2
-        x: 954
-        y: 113
+        x: 1362
+        y: 46
         width: 150
         height: 125
-      Text: u bad
+      Text: Hm...Well nothing too terribly interesting I suppose. Most everything
+        in this house is all so drab anyways. I did find an odd bottle in the kitchen.
+        A wonder what it was doing there.
       Type: 0
       NodeType: 1
-      Parent: 3
+      Parent: 5
       Trigger: 0
       TriggerText: 
       Connections: 07000000
     - ID: 7
       Size:
         serializedVersion: 2
-        x: 1137
-        y: 105
+        x: 1522
+        y: 46
         width: 150
         height: 125
-      Text: end 1
-      Type: 0
-      NodeType: 2
+      Text: 
+      Type: 1
+      NodeType: 1
       Parent: 6
       Trigger: 0
       TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1677
+        y: 46
+        width: 150
+        height: 125
+      Text: Hon hon, a bottle you say? Why it's a kitchen! What is odd about that?
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1837
+        y: 46
+        width: 150
+        height: 125
+      Text: Well the label is smudged. Even with the finest schooling in the whole
+        of Bristol I can't for the life of me read it. Who knows what was in the bottle.
+        It's empty now...
+      Type: 0
+      NodeType: 2
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
       Connections: 
-  CurrentSet: 0
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1203
+        y: 183
+        width: 150
+        height: 125
+      Text: Hon hon hon, I am sure you came across the surprise in the closet. It's
+        not worth missing!
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1363
+        y: 183
+        width: 150
+        height: 125
+      Text: That was you?? I dread to even think of what you did to the food!
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 719
+        y: 220
+        width: 150
+        height: 125
+      Text: Very busy? You know nothing of BUSY. I have been prepping your meal since
+        early this morning!
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 879
+        y: 220
+        width: 150
+        height: 125
+      Text: Hm? Ah, yes yes, run along now and bother someone else.
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 721
+        y: 357
+        width: 150
+        height: 125
+      Text: My grand daughter was going to marry that horrible man!
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 881
+        y: 357
+        width: 150
+        height: 125
+      Text: Have you lost your sense? You sound like the Grand Dutchess!
+      Type: 0
+      NodeType: 2
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 16
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 261
+        y: 103
+        width: 150
+        height: 125
+      Text: If it isn't the Grand Dutchess herself. What brings you to seek my most
+        important company?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 421
+        y: 103
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000000c0000000e000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 620
+        y: 66
+        width: 150
+        height: 125
+      Text: Your humility knows no bounds. I do not wish to discuss formalities but
+        the morbid matter at hand. A man has died at the table, and we haven't any
+        idea who it could have been!
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 780
+        y: 66
+        width: 150
+        height: 125
+      Text: I can assure you it wasn't me! We might have had competing markets, but
+        it was nothing to kill the man over! Do not mishear me, I don't believe it
+        was you either. I am sure that you loved your grand daughter too much to have
+        caused her this much unhappiness.
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 940
+        y: 66
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 050000000a000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1125
+        y: 46
+        width: 150
+        height: 125
+      Text: So you agree that it wasn't either of us? Well then that only leaves the
+        Frenchman.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1285
+        y: 46
+        width: 150
+        height: 125
+      Text: Yes, it would seem that he is particularly passionate about his cooking,
+        and that the guest in question had words to say about it.
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1445
+        y: 46
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 08000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1614
+        y: 48
+        width: 150
+        height: 125
+      Text: Di he? Is that a strong enough motive? To insult someone's food?
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1774
+        y: 48
+        width: 150
+        height: 125
+      Text: Just as strong of a motive as to kill someone over family pride.
+      Type: 0
+      NodeType: 2
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1145
+        y: 185
+        width: 150
+        height: 125
+      Text: I still accuse you. Only a man such as yourself with his head that far
+        up his own rear could have done something such as this!
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1305
+        y: 185
+        width: 150
+        height: 125
+      Text: I will have you know that my behind is cleaner than a polished diamond.
+        Mh hm.
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 625
+        y: 214
+        width: 150
+        height: 125
+      Text: Your company isn't the least bit important and I will dare to say that
+        you are an arse.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 785
+        y: 214
+        width: 150
+        height: 125
+      Text: '*Wipes a shed tear with a pout* "I say!"'
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 619
+        y: 378
+        width: 150
+        height: 125
+      Text: I wanted to divuldge to you how handsomly rich I am.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 779
+        y: 378
+        width: 150
+        height: 125
+      Text: You richer than ME? I swear I could be speaking to a mirror!
+      Type: 0
+      NodeType: 2
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 1
   TabList:
-  - interaction
+  - chef
+  - dutchess
 --- !u!114 &612579170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,18 +2164,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Set:
-  - CurrentId: 8
+  - CurrentId: 25
     NewWindowOpen: 0
     FirstWindow: 0
     Windows:
     - ID: 0
       Size:
         serializedVersion: 2
-        x: 333
-        y: 204
+        x: 130
+        y: 107
         width: 150
         height: 125
-      Text: Howdy! I'm a big dodo head
+      Text: Oui oui, hon hon. A guest of my dinner! How was it?
       Type: 0
       NodeType: 0
       Parent: -1
@@ -1497,104 +2185,591 @@ MonoBehaviour:
     - ID: 1
       Size:
         serializedVersion: 2
-        x: 566
-        y: 214
+        x: 290
+        y: 107
         width: 150
         height: 125
-      Text: u gay?
+      Text: 
       Type: 1
       NodeType: 1
       Parent: 0
       Trigger: 0
       TriggerText: 
-      Connections: 020000000300000004000000
+      Connections: 020000001500000017000000
     - ID: 2
       Size:
         serializedVersion: 2
-        x: 1259
-        y: 276
+        x: 470
+        y: 57
         width: 150
         height: 125
-      Text: end 2
+      Text: It was excellent. Is everyone just as satisfied?
       Type: 2
-      NodeType: 2
+      NodeType: 1
       Parent: 1
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 03000000
     - ID: 3
       Size:
         serializedVersion: 2
-        x: 745
-        y: 121
+        x: 630
+        y: 57
         width: 150
         height: 125
-      Text: 1
-      Type: 2
+      Text: Non monsuier. The bastard who died was not. It is just as well, that is
+        what happens when you insult French cooking!!
+      Type: 0
       NodeType: 1
-      Parent: 1
+      Parent: 2
       Trigger: 0
       TriggerText: 
-      Connections: 06000000
+      Connections: 04000000
     - ID: 4
       Size:
         serializedVersion: 2
-        x: 730
-        y: 364
+        x: 790
+        y: 57
         width: 150
         height: 125
-      Text: 2
-      Type: 2
+      Text: 
+      Type: 1
       NodeType: 1
-      Parent: 1
+      Parent: 3
       Trigger: 0
       TriggerText: 
-      Connections: 05000000
+      Connections: 0500000013000000
     - ID: 5
       Size:
         serializedVersion: 2
-        x: 890
-        y: 364
+        x: 964
+        y: 58
         width: 150
         height: 125
-      Text: end 3
-      Type: 0
-      NodeType: 2
+      Text: It seems you feel strongly about the issue. What about the meal wasn't
+        to his liking? I myself coulnd't find a flaw in it!
+      Type: 2
+      NodeType: 1
       Parent: 4
       Trigger: 0
       TriggerText: 
-      Connections: 
+      Connections: 06000000
     - ID: 6
       Size:
         serializedVersion: 2
-        x: 954
-        y: 113
+        x: 1124
+        y: 58
         width: 150
         height: 125
-      Text: u bad
+      Text: Where to begin monsuier? His discontent started with the first course!
+        The monster insulted my baquettes, saying that they were soft! Insolent pig.
       Type: 0
       NodeType: 1
-      Parent: 3
+      Parent: 5
       Trigger: 0
       TriggerText: 
       Connections: 07000000
     - ID: 7
       Size:
         serializedVersion: 2
-        x: 1137
-        y: 105
+        x: 1284
+        y: 58
         width: 150
         height: 125
-      Text: end 1
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 0800000011000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1444
+        y: 60
+        width: 150
+        height: 125
+      Text: The baguettes you say? Why I thought they were perfect! As a connoisuer
+        myself I have had a few that were baked finer. But the first course, I mean,
+        it's a wonder that he made it through dinner!
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1604
+        y: 60
+        width: 150
+        height: 125
+      Text: What do you mean monsuier? He died in between the second and third courses.
+        Were you not sitting at the table with him?
+      Type: 0
+      NodeType: 1
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 0a000000
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1764
+        y: 60
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 9
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b00000010000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1926
+        y: 66
+        width: 150
+        height: 125
+      Text: Oh-- Why yes I was present, I just had indulged in too much wine and was
+        too intent on the fabulous meal that you had served to even notice any of
+        the other guests!
+      Type: 2
+      NodeType: 1
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 0c000000
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 2086
+        y: 66
+        width: 150
+        height: 125
+      Text: Too much wine you say? Hon hon. Are you not a man? There was barely any
+        wine at the table at all! A tragedy not to have the correct glasses.
+      Type: 0
+      NodeType: 1
+      Parent: 11
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 2246
+        y: 66
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 0e000000
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 2411
+        y: 66
+        width: 150
+        height: 125
+      Text: A shame to be true. Where is a good host when you need one?
+      Type: 2
+      NodeType: 1
+      Parent: 13
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 2571
+        y: 66
+        width: 150
+        height: 125
+      Text: Hon hon. I would check the master bedroom if I were you. Surely someone
+        as foul as that has something to hide.
       Type: 0
       NodeType: 2
+      Parent: 14
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 16
+      Size:
+        serializedVersion: 2
+        x: 1924
+        y: 204
+        width: 150
+        height: 125
+      Text: I wasn't paying all that much attention. I was too busy eyeing my own
+        gold pocket watch to even notice.
+      Type: 2
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 17
+      Size:
+        serializedVersion: 2
+        x: 1445
+        y: 195
+        width: 150
+        height: 125
+      Text: Hm hm, they were rather soft--
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 12000000
+    - ID: 18
+      Size:
+        serializedVersion: 2
+        x: 1605
+        y: 195
+        width: 150
+        height: 125
+      Text: AWAY WITH YOU!!
+      Type: 0
+      NodeType: 2
+      Parent: 17
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 19
+      Size:
+        serializedVersion: 2
+        x: 966
+        y: 192
+        width: 150
+        height: 125
+      Text: So you killed the dead party?
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 14000000
+    - ID: 20
+      Size:
+        serializedVersion: 2
+        x: 1126
+        y: 192
+        width: 150
+        height: 125
+      Text: Certainly not! He brought it upon himself, but I did not kill him. I was
+        in the kitchen! While you lounged and enjoyed my meal I had work to do!
+      Type: 0
+      NodeType: 2
+      Parent: 19
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 21
+      Size:
+        serializedVersion: 2
+        x: 470
+        y: 198
+        width: 150
+        height: 125
+      Text: Entirely too much salt! You really don't know how to balance a meal.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 16000000
+    - ID: 22
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 198
+        width: 150
+        height: 125
+      Text: Imbecile! With such disregard you should join our unfortunate guest!
+      Type: 0
+      NodeType: 2
+      Parent: 21
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 23
+      Size:
+        serializedVersion: 2
+        x: 470
+        y: 335
+        width: 150
+        height: 125
+      Text: Hon Hon, Louis the XIV could not have eaten better, non oui.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 18000000
+    - ID: 24
+      Size:
+        serializedVersion: 2
+        x: 630
+        y: 335
+        width: 150
+        height: 125
+      Text: Do you insult me or are you drunk? It seems that you have forgotten who
+        standing here is French!
+      Type: 0
+      NodeType: 2
+      Parent: 23
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 16
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 291
+        y: 131
+        width: 150
+        height: 125
+      Text: Good evening mademoiselle, I trust you found the dinner to your liking?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 01000000
+    - ID: 1
+      Size:
+        serializedVersion: 2
+        x: 451
+        y: 131
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 0
+      Trigger: 0
+      TriggerText: 
+      Connections: 020000000c0000000e000000
+    - ID: 2
+      Size:
+        serializedVersion: 2
+        x: 642
+        y: 72
+        width: 150
+        height: 125
+      Text: It was fine, thank you. Although I must say, one of us did not think so.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 03000000
+    - ID: 3
+      Size:
+        serializedVersion: 2
+        x: 802
+        y: 72
+        width: 150
+        height: 125
+      Text: I should say not! That man should have kept to himself when it comes to
+        my craft!
+      Type: 0
+      NodeType: 1
+      Parent: 2
+      Trigger: 0
+      TriggerText: 
+      Connections: 04000000
+    - ID: 4
+      Size:
+        serializedVersion: 2
+        x: 962
+        y: 72
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
+      Parent: 3
+      Trigger: 0
+      TriggerText: 
+      Connections: 05000000
+    - ID: 5
+      Size:
+        serializedVersion: 2
+        x: 1129
+        y: 69
+        width: 150
+        height: 125
+      Text: I venture to ask, you were in the kitchen for the entire dinner, correct?
+        It seems as though you have something against this person in particular.
+      Type: 2
+      NodeType: 1
+      Parent: 4
+      Trigger: 0
+      TriggerText: 
+      Connections: 06000000
+    - ID: 6
+      Size:
+        serializedVersion: 2
+        x: 1289
+        y: 69
+        width: 150
+        height: 125
+      Text: Certainly! You cannot possibly claim that I was not in the kitchen! If
+        I had left, you would never have been served! Not even the wine would have
+        made it to your table!
+      Type: 0
+      NodeType: 1
+      Parent: 5
+      Trigger: 0
+      TriggerText: 
+      Connections: 07000000
+    - ID: 7
+      Size:
+        serializedVersion: 2
+        x: 1449
+        y: 69
+        width: 150
+        height: 125
+      Text: 
+      Type: 1
+      NodeType: 1
       Parent: 6
+      Trigger: 0
+      TriggerText: 
+      Connections: 080000000a000000
+    - ID: 8
+      Size:
+        serializedVersion: 2
+        x: 1632
+        y: 37
+        width: 150
+        height: 125
+      Text: I claim nothing in particular, your services for the evening were excellent.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 09000000
+    - ID: 9
+      Size:
+        serializedVersion: 2
+        x: 1792
+        y: 37
+        width: 150
+        height: 125
+      Text: Merci. If you will excuse me mademe, I must return to my work. The kitchen
+        needs to be seen to. Hon hon.
+      Type: 0
+      NodeType: 2
+      Parent: 8
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 10
+      Size:
+        serializedVersion: 2
+        x: 1630
+        y: 182
+        width: 150
+        height: 125
+      Text: You may not have left the kitchen but your meal did.
+      Type: 2
+      NodeType: 1
+      Parent: 7
+      Trigger: 0
+      TriggerText: 
+      Connections: 0b000000
+    - ID: 11
+      Size:
+        serializedVersion: 2
+        x: 1790
+        y: 182
+        width: 150
+        height: 125
+      Text: I will have nothing more to say to you!
+      Type: 0
+      NodeType: 2
+      Parent: 10
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 12
+      Size:
+        serializedVersion: 2
+        x: 639
+        y: 213
+        width: 150
+        height: 125
+      Text: I wouldn't say it was the finest meal that I have ever indulged in, but
+        I suppose for some it was edible.
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0d000000
+    - ID: 13
+      Size:
+        serializedVersion: 2
+        x: 799
+        y: 213
+        width: 150
+        height: 125
+      Text: Impertinent woman! My talents are wasted on you!
+      Type: 0
+      NodeType: 2
+      Parent: 12
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+    - ID: 14
+      Size:
+        serializedVersion: 2
+        x: 637
+        y: 352
+        width: 150
+        height: 125
+      Text: '*attempting to sound old* My teeth have a hard time, and I''ve lost a
+        marble--*'
+      Type: 2
+      NodeType: 1
+      Parent: 1
+      Trigger: 0
+      TriggerText: 
+      Connections: 0f000000
+    - ID: 15
+      Size:
+        serializedVersion: 2
+        x: 797
+        y: 352
+        width: 150
+        height: 125
+      Text: Quoi? I have no time to deal with the senile...
+      Type: 0
+      NodeType: 2
+      Parent: 14
       Trigger: 0
       TriggerText: 
       Connections: 
   CurrentSet: 0
   TabList:
-  - interaction
+  - money
+  - dutchess
 --- !u!95 &895522887
 Animator:
   serializedVersion: 3
