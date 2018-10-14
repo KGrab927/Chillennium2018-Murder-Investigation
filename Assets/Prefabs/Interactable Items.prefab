@@ -2966,7 +2966,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248161075279670}
   m_LocalRotation: {x: 0.009063558, y: 0.022449449, z: 0.9997008, w: 0.0034915782}
-  m_LocalPosition: {x: -1.28, y: -8.03, z: -0.69000006}
+  m_LocalPosition: {x: -1.67, y: -8.03, z: -0.68}
   m_LocalScale: {x: 3.1701388, y: 2.1243997, z: 7.2270412}
   m_Children:
   - {fileID: 4028534967018994}
@@ -3522,7 +3522,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1855817271905818}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0.98, y: -5.92, z: 0}
+  m_LocalPosition: {x: 1.33, y: -6.71, z: -0.3}
   m_LocalScale: {x: 1.3677142, y: 1.3867824, z: 1.4600476}
   m_Children:
   - {fileID: 4984623920825334}
@@ -4382,8 +4382,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.96, y: 1.94}
-    newSize: {x: 1.96, y: 1.94}
+    oldSize: {x: 1.95, y: 1.95}
+    newSize: {x: 1.95, y: 1.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5108,7 +5108,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.95, y: 1.95}
-    newSize: {x: 0.29, y: 0.43}
+    newSize: {x: 1.95, y: 1.95}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5752,6 +5752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300000, guid: 8af63e359a711a04791941ca2247b103, type: 3}
   interact_icon: {fileID: 1707771707674874}
@@ -5767,6 +5768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300002, guid: b0166322dbfd63e43b496976eb79a471, type: 3}
   interact_icon: {fileID: 1371071654409296}
@@ -5810,6 +5812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300032, guid: 5638e0ff2d4d7db4391a847fad81cf34, type: 3}
   interact_icon: {fileID: 1676780796788636}
@@ -5825,6 +5828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300162, guid: 5638e0ff2d4d7db4391a847fad81cf34, type: 3}
   interact_icon: {fileID: 1963689603148334}
@@ -5840,6 +5844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300104, guid: 59bf75afcf2669e4982093a8d3f473e4, type: 3}
   interact_icon: {fileID: 1400233113092026}
@@ -5855,6 +5860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300310, guid: bc1fe2e8a0286724ab588828b03f25f6, type: 3}
   interact_icon: {fileID: 1249868371355312}
@@ -5884,6 +5890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
   portrait: {fileID: 21300044, guid: bc1fe2e8a0286724ab588828b03f25f6, type: 3}
   interact_icon: {fileID: 1074397636356388}
@@ -5927,8 +5934,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0169a638ef81aba45a6740c761c70d35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interacting: 0
   interaction_string: interaction
-  portrait: {fileID: 21300004, guid: 11c21def5f776f5428ada227fc2b399a, type: 3}
+  portrait: {fileID: 21300004, guid: 58945ddd9996e3a4fa5e55b52bacd741, type: 3}
   interact_icon: {fileID: 1127315498276102}
   random_responses: 0
 --- !u!114 &114860078691681556
@@ -6560,12 +6568,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 11c21def5f776f5428ada227fc2b399a, type: 3}
+  m_Sprite: {fileID: 21300006, guid: 58945ddd9996e3a4fa5e55b52bacd741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.29, y: 0.43}
+  m_Size: {x: 1.95, y: 1.95}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -7718,7 +7726,7 @@ SpriteRenderer:
   m_Size: {x: 0.29, y: 0.43}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212209849711418376
@@ -11582,7 +11590,7 @@ SpriteRenderer:
   m_Size: {x: 0.29, y: 0.43}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212806541099029836
@@ -11896,12 +11904,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 11c21def5f776f5428ada227fc2b399a, type: 3}
+  m_Sprite: {fileID: 21300004, guid: 58945ddd9996e3a4fa5e55b52bacd741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.96, y: 1.94}
+  m_Size: {x: 1.95, y: 1.95}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
