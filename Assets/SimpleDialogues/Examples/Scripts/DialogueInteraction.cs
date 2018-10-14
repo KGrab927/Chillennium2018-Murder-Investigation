@@ -41,25 +41,32 @@ public class DialogueInteraction : MonoBehaviour {
 		dialogueContainer.SetActive(true);
 		active = false;
 		showingText = true;
-		FindObjectsOfType<PlayerController>()[0].EndInteract();
+		if (FindObjectsOfType<PlayerController>().Length > 0) {
+			FindObjectsOfType<PlayerController>()[0].EndInteract();
+		}
 		interactable.EndInteract();
 	}
 
-	public void StartInteraction(GameObject obj, string str, int random_responses)
+	public void StartInteraction(GameObject obj, string str, int random_responses, int index = -1)
 	{
 		active = true;
 		interactable = obj.GetComponent<Interactable>();
 		portrait.GetComponent<Image>().sprite = interactable.portrait;
 		interactable.Interact();
 		dialogues = interactable.GetComponent<Dialogues>();
-		if (random_responses > 0)
-		{
-			Random.Range(0, random_responses);
-			dialogues.SetTree(random_responses.ToString());
+		if (index == -1) {
+			if (random_responses > 0)
+			{
+				Random.Range(0, random_responses);
+				dialogues.SetTree(random_responses.ToString());
+			}
+			else
+			{
+				dialogues.SetTree(str);
+			}
 		}
-		else
-		{
-			dialogues.SetTree(str);
+		else {
+			dialogues.SetTree(index.ToString());
 		}
 		dialogues.Reset();
 		dialogueText.text = dialogues.GetCurrentDialogue();
