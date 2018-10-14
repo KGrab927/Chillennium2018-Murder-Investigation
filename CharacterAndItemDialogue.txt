@@ -1,0 +1,686 @@
+Cut Scenes: {
+
+	Beginning Dialogue: {
+	
+		Guests:	{
+			*whisper*
+			
+			*murmurs*
+			
+			"What has happened?"
+			
+			"who could have done this?"
+		}
+		
+		Player Character: {
+			
+			"Why am I lying there--"
+			
+			"........Am I -- dead?"
+			
+			"Why would someone do this? WHO would do this??"
+		
+		}
+	
+	}
+
+	Ending Dialogue: {
+	
+		Police Man :{
+			"Alright people calm down. We've talked to eveyone and someone has to go to the station tonight.
+			Someone here, in this house, is guilty. Is anyone going to fess up or should I just pick?"	
+		}
+	
+		//simply an out put prompt that tells the user to possess the person they think is guilty
+		Prompt: Who do you think is guilty?
+		
+		Player choice:{
+		
+			Victorian Woman: "I confess, it was I! I just couldn't stand the thought of that man and my grand daughter together! Surely that was my motive!"
+			
+			French Chef: "Oui Oui, you have found my frenchiness out! The insults against my food were too great! That is why I have disposed of this scum!"
+			
+			Money Bags: "Mmhm, Well it still stands true that there is only one rich man here now. I did it for money of course, not that it matters, I can pay my way out of this."
+		}
+	}
+	
+	
+
+}
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+Player Character{
+//as the ghost
+	//Beginning scene / trapped in room
+	{
+		//Interacts with door
+		"I can't get out."
+		"I wonder if the Scotsman can help me..."
+	}
+
+//interacts with item
+"I can't do anything with this! I am a ghost."
+
+"I want to find out who did this. Maybe I should talk to some of the guests."
+
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+Main Characters :
+
+Victorian Woman Dialogue:{
+//from the perspective that the player is speaking to the woman as different characters
+
+	if speaking to the french cook {
+	
+	-first interaction: "Out of the kitchen? What reason does a rat have to leave its hole?"
+	
+		A. "Mademoiselle, please, I simply wish to know how the party recieved the dinner. 
+		Did they find it to be excellent?"
+			
+			Victorian Woman: "Hmf, excellent? I dare say that a man died at that dinner. You wouldn't know anything about that, would you?"
+				
+				A."You think I had anything to do with that, Mademe? Certainly not! I was in the kitchen preparing the feast!"
+					
+					Victorian Woman: "Yes, you were in the kitchen, that cannot be disputed. But the matter at hand is not your food, but the man that died at the table."
+					
+					A. "Oui, oui. What is it you suggest then? If you do not suspect my cooking?"
+						
+						Victorian Woman: "Oh I haven't the slightest idea. It wasn't me, but that Money Bags Mcgee, 
+						I heard he has a competing company with the dead party. Maybe you should speak to him, 
+						instead of bothering an old woman past her bedtime."
+						
+						A. "When does a distingushed woman retire?"
+						
+							 Victorian Woman: "Precisely at midnight, staying up any later isn't good for my complexion."
+								[END]
+						
+						B. "Oui, Oui."
+							[END]
+						
+				B. "A man died? You cannot blame my meal. Afterall, it was excellent!"
+				
+					Victorian Woman: "Hmf, the meal was etible. I suppose I can say that. After all, I am still here. 
+					Now then, are we done?"
+					[END]
+	
+		B. "A rat?! I say mademe! Coming from an old croan who probably did the deed herself!"
+			
+			Victorian Woman: "I have no business talking to such a foul mouthed accuser. Leave me in peace servant!"
+				[END]
+				
+		C. "Psst. Do you know who did it? Who killed me?"
+			
+			Victorian Woman: "What on earth are you talking about? Are you mad? Have you gotten into the absynth? Or heaven forbid, have you forgotten that you are a FRENCH CHEF?
+			Do not speak to me until you have regained your senses!"
+			[END]
+	}
+
+	
+	if speaking to the Money Bags {
+	
+	-upon interaction: "Ah, Mr. Money Bags Mcgee. How has your evening been thus far? Aside from the obvious plight of course."
+	
+		A. "Mhm hm hm, M-why excellent, simply excellent. A pity what happened earlier, but the sooner the police arrive the sooner things will be sorted out."
+			
+				Victorian Woman: "The authorities should help to solve some of this, true."
+				
+					A. "Back to more amicable discussion, how are your relations?"
+						
+						Victorian Woman: "They are getting along fine, my grand daughter in particular. 
+						If you should know, she was being considerably courted by the dead party. 
+						He may have been in possession of a company, but I could never have allowed her to marry someone without any official status. 
+						The blood of the family must be maintained!"
+						
+							A. "It seems this man's untimely death comes as a benefit to you. "
+							
+								Victorian Woman: "Nothing more than a coincidence. Though I must say, it comes as a benefit to you as well. With competition looming in the air,
+								I'd say you would be just as glad to get rid of it."
+								
+									A. "You think that I would resort to such matters because I cannot handle some friendly competition? Hogwash!"
+									
+										Victorial Woman: "Indeed. What can be said is that a man is dead, and someone is to blame. Have you been to the kitchen lately?
+										I have heard from the staff that it is in particular disarray."
+										[END]
+										
+									B. "A rather convenient coincidence all the same. I think you did it!"
+									
+										Victorian Woman: "Until the authorities arrive I will have nothing more to say to you."
+										[END]
+		
+					B. "I can see this conversation going no further. I have some money to count, and business to conduct."
+					
+						Victorian Woman: "Hfm, there is no need to be so unpleasant. It was you who came to me, not the other way around."
+						[END]
+					
+		B. "Dreadful, absolutely dreadful! Have you seen the table setting? It is not in the least bit acceptable!"
+			
+				Victorian Woman: "Yes, yes, I do agree, but perhaps you should take these matters up with the chef. Isn't he the one who planned the dinner?"
+				[END]
+
+		C. "Money, money, I have company things to think of--"
+			
+				Victorian Woman: "Excuse me? It would seem that you are babbling and have forgotten you head. At this point I'm not even sure that it is attatched to your shoulders!"
+				[END]		
+	
+	}
+
+	Failure Dialogue:{
+	"I will not speak to you, you have proven rude on far too many occasions."
+	}	
+
+}
+
+
+
+French Chef:{
+
+	if speaking to Money Bags Mcgee:{
+		
+	-upon interaction: "Oui oui, hon hon. A guest of my dinner! How was it?"
+		
+		A."It was excellent. Is everyone just as satisfied?"
+		
+			French chef: "Non monsuier. The bastard who died was not. It is just as well, that is what happens when you insult french cooking!!"
+			
+				A."It seems you feel strongly about the issue. What about the meal wasn't to his liking? I myself couldn't find a flaw in it!"
+				
+					French Chef: "Where to begin monsuier? His discontent started with the first course! The monster insulted my baguettes, saying that they where soft! Insolent pig."
+					
+						A. "The baguettes you say? Why I thought they were perfect! A connoisuer myself I have had few that were baked finer. But the first course, I mean, it's a wonder he made it through dinner!"
+						
+							French Chef: "What do you mean monsuier? He died in between the second and third courses. Were you not sitting at the table with him?"
+							
+								A. "Oh-- Why yes I was present, I just had indulged in too much wine and was too intent on the fabulous meal that you had served to even notice any of the other guests!"
+								
+									French Chef: "Too much wine you say? Hon hon. Are you not a man? There was barely any wine at the table at all! A tragedy not to have the correct glasses."
+									
+										A. "A shame to be true. Where is a good host when you need one?"
+											
+											French Chef: "Hon hon. I would check the master bedroom if I were you. Surely someone as foul as that has something to hide."
+											[END]
+						
+								B. "I wasn't paying all that much attention. I was too busy eyeing my own gold pocket watch to even notice."
+								[END]
+						
+						B. "Hm hm, they were rather soft--"
+							
+							French Chef: "AWAY WITH YOU!!"
+							[END]
+						
+				B."So you killed the dead party?"
+					
+					French Chef: "Certainly not! He brought it upon himself, but I did not kill him. I was in the kitchen! While you lounged and enjoyed my meal I had work to do!"
+					[END]
+				
+		B. "Entirely too much salt! You really don't know how to balance a meal."
+			
+			French Chef: "Imbécile! With such disregard you should join our unfortunate guest!"
+			[END]
+			
+		C. "Hon Hon, Louis the XIV could not have eaten better, non oui."
+		
+			French Chef: "Do you insult me or are you drunk? It seems that you have forgotten who standing here is french!"
+			[END]
+
+
+
+	}
+
+	
+	
+	if speaking to Victorian Woman:(
+	
+		-upon interaction: "Good evening mademoiselle, I trust you found the dinner to your liking?"
+		
+			A. "It was fine, thank you. Although I must say, one of us did not think so."
+			
+				French chef: "I should say not! That man should have kept to himself when it comes to my craft!"
+					
+					A. "I venture to ask, you were in the kitchen for the entire dinner, correct? It seems as though you have something against this person in particular."
+						
+						French chef: "Certainly! You cannot possibly claim that I was not in the kitchen! If I had left, you would never have been served! Not even the wine would have made it to your table!"
+						
+							A. "I claim nothing in particular, your services for the evening were excellent."
+							
+								French chef: "Merci. If you will excuse me mademe, I must return to my work. The kitchen needs to be seen to. Hon hon."
+								[END]
+	
+							B. "You may not have left the kitchen but your meal did."
+							
+								French chef: "I will have nothing more to say to you!"
+								[END]
+	
+			B. "I wouldn't say it was the finest meal that I have ever indulged in, but I suppose for some it was edible."
+			
+				French chef: "Impertinent woman! My talents are wasted on you!"
+				[END]
+			
+			C. *attempting to sound old* "My teeth have a hard timem, and I've lost a marble--*"
+				
+				French Chef: "Quoi? I have no time to deal with the senile..."
+				[END]
+	)
+	
+	Failure Dialogue:{
+	"I cannot speak to you, I have to work the kitchen! Go away!"
+	}
+
+
+
+}
+
+
+
+Money Bags Mcgee:{
+
+	if speaking to French Chef:{
+		
+		-upon interaction: "Yes? For whatever could you want? I am a very busy man."
+			
+			A. "Hon hon monsuier, as you know I've been busy the entire evening, but I was wondering if you had taken time to venture the estate?"
+			
+				$$: "Oh-ho! Yes, it is important for a man to know his competition. I haven't left a single drawer unchecked."
+				
+					A. "Anything to catch your interest?"
+					
+						$$: "Hm...Well nothing too terribly interesting I suppose. Most everything in this house is all so drab anyways. 
+						I did find an odd bottle in the kitchen. A wonder what it was doing there."
+	
+							A. "Hon hon, a bottle you say? Why it's a kitchen! What is odd about that?"
+								
+								$$: "Well the label is smudged. Even with the finest schooling in the whole of Bristol I can't for the life of me read it. 
+								Who know's what was in the bottle. It's empty now..."
+								[END]
+						
+					B. "Hon hon hon, I am sure you came across the surprise in the closet. It's not worth missing!"
+					
+						$$: "That was you?? I dread to even think of what you did to the food!"
+						[END]
+					
+			B. "Very busy? You know nothing of BUSY. I have been prepping your meal since early this morning!"
+			
+				$$: "Hm? Ah, yes yes, run along now and bother someone else."
+				[END]
+				
+			C. "My grand daughter was going to marry that horrible man!"
+				
+				$$: "Have you lost your senses? You sound like the Grand Dutchess!"
+				[END]
+	}
+
+	
+	
+	if speaking to Victorian Woman:(
+	
+		-upon interaction: "If it isn't the Grand Dutchess herself. What brings you to seek my most important company?"
+			
+			A."Your humility knows no bounds. I do not wish to discuss formalities but the morbid matter at hand. A man has died at the table, and we haven't any idea who it could have been!"
+				
+				$$:"I can assure you it wasn't me! 
+				We might have had competing markets, but it was nothing to kill the man over! Do not mishear me, I don't believe it was you either. 
+				I am sure that you loved your grand daughter too much to have caused her this much unhappiness."
+				
+					A. "So you agree that it wasn't either of us? Well then that only leaves the Frenchman."
+					
+						$$: "Yes, it would seem that he is particularly passionate about his cooking, and that the guest in question had words to say about it."
+						
+							A. "Did he? Is that a strong enough motive? To insult someone's food?"
+							
+								$$: "Just as strong of a motive as to kill someone over family pride."
+								[END]
+		
+					B. "I still accuse you. Only a man such as yourself with his head that far up his own rear could have done something such as this!"
+						
+						$$: "I will have you know that my behind is cleaner than a polished diamond. Mh hm."
+						[END]
+
+							
+			B. "Your company isn't the least bit important and I will dare to say that you are an arse."
+			
+				$$: *wipes a shed tear with a pound* "I say!"
+					[END]
+			
+			C. "I wanted to divuldge to you how handsomly rich I am."
+				
+				$$: "You richer than ME? I swear I could be speaking to a mirror!"
+				[END]
+		
+	)
+	
+	Failure Dialogue:{
+	"Mhm Hm, excuse me, but you are far to insignificant to be speaking to me."
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+Stand INs :
+
+
+Scotsman Dialogue:{
+
+//mumbles randomly with each player interaction
+//Scotsman is passed out for these interactions / this dialogue appears if the player either interacts or tries to possess
+
+	*hick*
+
+	*burp*
+
+	*hick* "So many-- pffttt** damn sheeps....zzzz"
+
+	*His breath smells of scotch
+
+	*We should let him sleep. I don't think he will wake up anyways...*
+
+	"Bagpipes-- *hurp**.....zzzzz"
+
+	"Shut that sheep up....zzzzz"
+
+		//Beginning scene Scotsman is awake
+		{
+		"Maybe a wee night cap will calm me down. I just can't stand to think about..."
+
+		//Scotsman passes out
+		*Hick* "The hallway seems to be _pfftttt** shpinningthh..."
+		
+		*thud*
+
+		"zzzzzzzzzz"
+
+		}
+
+}
+
+
+Butler Dialogue:{
+
+	"Hm, it would seem the chandalier needs some dusting."
+
+	"I wonder where the sullery maid has got off to now."
+
+	"That idiot of a chef left the kitchen in an absolutely horrendous state. There were empty bottles everywhere."
+
+	"Hmm? Perhaps you should visit the dining room. That is where our guest began showing symptoms."
+
+	"The police are on their way, certainly. But we live so far out, they shouldn't make it here until midnight."
+
+	"Where did I put that knife?"
+
+
+	//if ghost tries to enter/possess
+	*You cannot possess this person.*
+
+}
+
+
+Priest Dialogue{
+
+	"A brazen act, to murder someone when a man of God is present.  It is a wonder that they have not been struck down."
+
+	"I must return to the abbey by midnight. I do hope the police arrive soon."
+
+	"I overheard the Frenchman speaking vulgar phrases in his own language. 
+	Does he think that such words would escape my ears? 
+	I would check the cookery if I were you. That is where I heard the loudest outbursts."
+
+	*being pious*
+
+	*humming in catholic*
+
+
+	//If ghost tries to possess
+	"I sense an unholy presence. BEGONE"
+
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+Items && Item interaction Dialogue && Rooms:
+
+//Sorted by room
+
+Master Bed room: {
+
+	Drapes{
+	
+	Victorian Woman: "My word. What a tacky set of drapery. Could have done with a bit more blue,
+	and less of this dreadful floral pattern."
+	
+	Frenchy: "Hon Hon Hon" *the body you are posessing attempts to blow his nose into the drapes*
+	*you resist*
+	
+	Money Bags: "It's a wonder they can even afford drapes, much less windows."
+	
+	
+	}
+	
+	*Bed{
+	
+	Victorian Woman: "I dare not even think what could have happened here. Such thoughts are not good for my complexion."
+
+	Frenchy: "Hon Hon, oui oui, Hon Hon." *the person you are possesing attempts to put a leftover cutlet into the bed*
+	*you resist* "How do you like those pomme? Hon Hon."
+	
+	Money Bags: "I did not know that beds could come this small. How quaint."
+	
+	}
+
+	Closet/Wardrobe/Dresser{
+	
+	Victorian Woman: "Ooff! What an incredible draft! The moths will be eating this up in no time."
+	
+	Frenchy: *Despite your urges the person you are possesing begins to urinate*
+	
+	Money Bags: "Only three sets of night gowns? Is this person really so poor as to sleep naked?"
+	
+	}
+
+
+
+}
+
+
+Bathroom room: {
+
+	Soap{
+	
+	Victorian Woman: *Sniffs* "Gardenia, my grand daughter detests gardenia. As do I. This match would have never worked."
+	
+	Frenchy: *the person you possess sees no importance in this object.*
+	
+	Money Bags: *Sniffs* "Flowers, what a common scent."
+	
+	
+	}
+	
+	*Medicine Cabinet{
+	
+	Victorian Woman: "Perhaps an aspirin, to sooth my nerves."
+
+	Frenchy: "...."
+	
+	Money Bags: "There is a distinct lack of opium in this assembly. How unfortunate, I always take some to unwind."
+	
+	}
+
+	Toilet Paper{
+	
+	Victorian Woman: "The paper is soft and sturdy. At least they had that going for them."
+	
+	Frenchy: *the person you posses begins unwraveling the roll* "Hon Hon Hon"
+	
+	Money Bags: "Only 2-ply? Are they some kind of monster? You may as well just strip the bark off a tree!"
+	
+	}
+
+
+
+}
+
+
+
+Dining Room: {
+
+	*Wine Glass{
+	
+	Victorian Woman: "The crystal sounds flat and needs some polish."
+	
+	Frenchy: "Such a waste of fine Cabernet. And to be served in a Bordeux too! I should have saved some..."
+	
+	Money Bags: "The service really should be trained better. At dinner the Cabernet was served in the Bordeaux glass. Such a thing would never happen in MY house."
+	
+	
+	}
+
+}
+
+Pantry: {
+
+	//There is no item, interaction starts upon entry
+
+	
+	Victorian Woman: "Hmf, sparse. Bare as bones. It's a wonder dinner even made it on the table."
+	
+	Frenchy: "It should be a sin to only stock one Cabernet." *Sad Hon hons*
+	
+	Money Bags: "I swear I just saw a weavil in the flour pot." *shudder*
+
+}
+
+
+Cloak Room: {
+
+	//There is no item, interaction starts upon entry
+	
+	Victorian Woman: "Is that something in the Chef's coat pocket? I shouldn't pry..."
+	
+	Frenchy: "Absolutely nothing to see here!"
+	
+	Money Bags: "Someone should air out the moths, I had better check my coat for holes."
+	
+}
+
+
+Guest Bed room: {
+
+	//includes same dialogue as master bed.
+	//only item interaction is drapes
+	
+	//Upon room entry
+	
+	Victorian Woman: "To think, if they actually married I would have to sleep HERE."
+	
+	Frenchy: "A nice Cabernet and a nap here would be nice. Hon Hon."
+	
+	Money Bags: "Is this really meant to be a guest room? I almost thought that I had stumbled in to the servant's quarters."
+
+	Drapes{
+	
+	Victorian Woman: "My word. What a tacky set of drapery. Could have done with a bit more blue,
+	and less of this dreadful floral pattern."
+	
+	Frenchy: "Hon Hon Hon" *the body you are posessing attempts to blow his nose into the drapes*
+	*you resist*
+	
+	Money Bags: "It's a wonder they can even afford drapes, much less windows."
+	
+	
+	}
+
+}
+
+
+Parlor: {
+
+	Whiskey Glass{
+	
+	Victorian Woman: "Apparently the Scotsman has gotten here first."
+	
+	Frenchy: *dispite your urges the person you are possessing drinks the rest of the scotch*
+	
+	Money Bags: "I've seen finer scotch."
+	
+	
+	}
+	
+	Fire Place{
+	
+	Victorian Woman: "It reminds me of my childhood in winter. Such a comforting smell."
+
+	Frenchy: "I could have roasted a boar here..."
+	
+	Money Bags: "I will warm my buttocks. This house is so cold."
+	
+	}
+}
+
+Study/Library: {
+
+	Pile of Letters{
+	
+	Victorian Woman: "Is that a letter to my grand daughter?"
+	
+	Frenchy: "No recipes here."
+	
+	Money Bags: "mmmm, let's see if I can fish out any important records... Finances maybe? No, I've seen the state of the house, they couldn't possibly be competition. Not with 2-ply toilet paper..."
+	
+	}
+}
+
+Kitchen: {
+
+	Arsenic Bottle{
+	
+	Victorian Woman: "Is this Arsenic or Absynth? Ah, at my age who can tell?"
+	
+	Frenchy: "Hon Hon Hon. Dégénéré putain." 
+	
+	Money Bags: "What good is an empty bottle?"
+	}
+	
+	
+	Oven: {
+	
+	Victorian Woman: "What a lovely smell fresh baguettes bring."
+	
+	Frenchy: "English pomme de terre does is not sophisticated enough to know what makes a good baguettes" 
+	
+	Money Bags: "How did we ever enjoy a meal with only 2 ovens and no warming box?"
+	}
+
+}
+
+
+Billards Room: {
+
+	Pool Cue{
+	
+	Victorian Woman: "I would never dream of touching that."
+	
+	Frenchy: *the person you possess has no interest in the item* 
+	
+	Money Bags: "It's crooked."
+	}
+}
+
+
+
+
+
+
