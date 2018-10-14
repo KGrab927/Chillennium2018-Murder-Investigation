@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
 
 		Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
-		if (movement.magnitude == 0)
+		if (movement.magnitude == 0 || interacting)
 		{
 			rb2d.velocity = new Vector2(Mathf.Lerp(rb2d.velocity.x, 0, .8f), Mathf.Lerp(rb2d.velocity.y, 0, .8f));
 			anim.SetBool("moving", false);
