@@ -57,8 +57,8 @@ public class DialogueInteraction : MonoBehaviour {
 		if (index == -1) {
 			if (random_responses > 0)
 			{
-				Random.Range(0, random_responses);
-				dialogues.SetTree(random_responses.ToString());
+				int ind = Random.Range(0, random_responses);
+				dialogues.SetTree(ind.ToString());
 			}
 			else
 			{
