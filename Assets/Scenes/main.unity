@@ -191,6 +191,314 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &176012523 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1563310242736350, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &176012524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 176012523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 81
+        y: 118
+        width: 150
+        height: 125
+      Text: I dare not even think what could have happened here.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 63
+        y: 136
+        width: 150
+        height: 125
+      Text: Hon Hon. *The person you are possessing attempts to blow his nose into
+        the sheets* *You resist*
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 107
+        y: 141
+        width: 150
+        height: 125
+      Text: I did not know that beds could come this small. How quaint.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 0
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &196726507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1758006590774030, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &196726508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196726507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 111
+        y: 154
+        width: 150
+        height: 125
+      Text: Perhaps an aspirin, to sooth my nerves.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 105
+        y: 145
+        width: 150
+        height: 125
+      Text: '....'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 134
+        y: 134
+        width: 150
+        height: 125
+      Text: There is a distinct lack of opium in this assembly. How unfortunate, I
+        always take some to unwind.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &316405155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1726780904521332, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &316405156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316405155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 112
+        y: 170
+        width: 150
+        height: 125
+      Text: Is this Arsenic or Absynth? Ah, at my age who can tell?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 106
+        y: 114
+        width: 150
+        height: 125
+      Text: Hon Hon Hon. Degenere putain.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 131
+        y: 112
+        width: 150
+        height: 125
+      Text: What good is an empty bottle?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &385983019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1248161075279670, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &385983020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385983019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 126
+        y: 117
+        width: 150
+        height: 125
+      Text: My word. What a tacky set of drapery. Could have done with a bit more
+        blue and less of this dreadful floral pattern.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 107
+        y: 128
+        width: 150
+        height: 125
+      Text: Hon Hon Hon *The body you are possessing attempt to steal the drapes*
+        *You resist*
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 130
+        y: 126
+        width: 150
+        height: 125
+      Text: It's a wonder they can even afford drapes, much less windows.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1001 &412527503
 Prefab:
   m_ObjectHideFlags: 0
@@ -442,6 +750,82 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &422132532 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1253567118214898, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &422132533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422132532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 72
+        y: 149
+        width: 150
+        height: 125
+      Text: It reminds me of my childhood in winter. Such a comforting smell.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 131
+        y: 113
+        width: 150
+        height: 125
+      Text: I could have roasted a boar here...
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 150
+        height: 125
+      Text: I will warm my buttocks. This house is so cold.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1 &583780849
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +992,83 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -0.818, y: 9.984, z: 4.638}
+--- !u!1 &648762730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1528029673129322, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &648762731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 648762730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 78
+        y: 136
+        width: 150
+        height: 125
+      Text: Apparently the Scotsman has gotten here first.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 153
+        y: 152
+        width: 150
+        height: 125
+      Text: '*despite your urges the person you are possessing drinks the rest of
+        the scotch*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 116
+        y: 136
+        width: 150
+        height: 125
+      Text: I've seen finer scotch.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1001 &750706966
 Prefab:
   m_ObjectHideFlags: 0
@@ -657,6 +1118,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].Windows.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4560536953584806, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -701,9 +1177,133 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0.29
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[0].FirstWindow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[1].FirstWindow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].CurrentId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: Set.Array.data[2].FirstWindow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114315058832679884, guid: fe9286e6744c5a04f831c735bbf48ca3,
+        type: 2}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114828069085901740, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114482923719072660, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114721956374357788, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114874849143936580, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114519773302627160, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114437462907743864, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114118482330637696, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114866381690657788, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114766796555976584, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114783732103528134, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
+    - {fileID: 114337625719836504, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: fe9286e6744c5a04f831c735bbf48ca3, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1060000598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1768648057687510, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1060000599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1060000598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 96
+        y: 132
+        width: 150
+        height: 125
+      Text: My word. What a tacky set of drapery. Could have been done with a bit
+        more blue and less of this dreadful floral pattern.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 112
+        y: 132
+        width: 150
+        height: 125
+      Text: Hon Hon Hon. *the body you are possessing attempts to blow his nose into
+        the drapes.*    *You resist*
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 113
+        y: 136
+        width: 150
+        height: 125
+      Text: It's a wonder they can even afford drapes, much less windows.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1 &1112923061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1729,82 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1247828154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1995588174465590, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1247828159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247828154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 255
+        y: 62
+        width: 150
+        height: 125
+      Text: I would never dream of touching that.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 302
+        y: 93
+        width: 150
+        height: 125
+      Text: '*The person you possess has no interest in that item*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 234
+        y: 120
+        width: 150
+        height: 125
+      Text: It's crooked.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1 &1343400956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +2061,161 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2edb75244b68f3640b27b143f62dcb49, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1728954440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1866782139288256, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1728954441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1728954440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 91
+        y: 97
+        width: 150
+        height: 125
+      Text: What a lovely smell fresh baguettes bring.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 106
+        y: 140
+        width: 150
+        height: 125
+      Text: English pomme de terre is not sophisticated enough to know what makes
+        a good baguette.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 91
+        y: 117
+        width: 150
+        height: 125
+      Text: How did we ever enjoy a meal with only 2 ovens and no warming box?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &1817064349 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1296776569288870, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1817064350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817064349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 116
+        y: 119
+        width: 150
+        height: 125
+      Text: The crystal sounds flat and needs some polish.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 138
+        y: 132
+        width: 150
+        height: 125
+      Text: Such a waste of fine Cabernet. And to be served in a Bordeux too! I should
+        have saved some...
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 129
+        y: 144
+        width: 150
+        height: 125
+      Text: The service really should be trained better. At dinner the Cabernet was
+        served in the Bordeaux glass.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 1
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1001 &1835438041
 Prefab:
   m_ObjectHideFlags: 0
@@ -1637,6 +2468,237 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1851169474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1855817271905818, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1851169475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1851169474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 30
+        y: 147
+        width: 150
+        height: 125
+      Text: '*Sniffs* Gardenia, my grand daughter dtests gardenia. As do I. This match
+        would have never worked.'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 105
+        y: 87
+        width: 150
+        height: 125
+      Text: '*the person you possess sees no importance in this object.*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 156
+        y: 151
+        width: 150
+        height: 125
+      Text: '*Sniffs* Flowers, what a common scent.'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &1921143952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1303437173122350, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &1921143953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1921143952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 150
+        height: 125
+      Text: Ooff! What an incredible draft! The moths will be eating this up in no
+        time.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 91
+        y: 108
+        width: 150
+        height: 125
+      Text: '*Despite your urges the person you are possessing begins to urinate*'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 111
+        y: 113
+        width: 150
+        height: 125
+      Text: Only three sets of night gowns? Is this person really so poor as to sleep
+        naked?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
+--- !u!1 &2013740595 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1044319970029956, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &2013740596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013740595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 150
+        y: 94
+        width: 150
+        height: 125
+      Text: The paper is soft and sturdy. At least they had that going for them.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 118
+        y: 156
+        width: 150
+        height: 125
+      Text: '*the person you possess begins unwraveling the roll* Hon Hon Hon'
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 119
+        y: 135
+        width: 150
+        height: 125
+      Text: Only 2-ply? Are they some kind of monster?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
 --- !u!1001 &2020427819
 Prefab:
   m_ObjectHideFlags: 0
@@ -1679,3 +2741,81 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71cf1fe623c01bf49836c7922b370679, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2095924432 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1936145932857930, guid: fe9286e6744c5a04f831c735bbf48ca3,
+    type: 2}
+  m_PrefabInternal: {fileID: 832083948}
+--- !u!114 &2095924433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2095924432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10fe5d6867c1b5449b4bf163fcd72ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Set:
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 114
+        y: 121
+        width: 150
+        height: 125
+      Text: Is that a letter to my grand daughter?
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 88
+        y: 80
+        width: 150
+        height: 125
+      Text: No recipes here.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  - CurrentId: 1
+    NewWindowOpen: 0
+    FirstWindow: 0
+    Windows:
+    - ID: 0
+      Size:
+        serializedVersion: 2
+        x: 158
+        y: 137
+        width: 150
+        height: 125
+      Text: mmmm, let's see if I can fish out any important records... Finances maybe?
+        No, surely not. They could not possibly be competition. Not with 2-ply toilet
+        paper.
+      Type: 0
+      NodeType: 0
+      Parent: -1
+      Trigger: 0
+      TriggerText: 
+      Connections: 
+  CurrentSet: 2
+  TabList:
+  - dutchess
+  - chef
+  - money
