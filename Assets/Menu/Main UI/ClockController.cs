@@ -14,11 +14,23 @@ public class ClockController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		minuteHand.transform.Rotate(new Vector3(0,0,-1), ((180 / minutesToEnd) / 60) * Time.deltaTime);
-		hourHand.transform.Rotate(new Vector3(0, 0, -1), ((15 / minutesToEnd) / 60) * Time.deltaTime);
-
-		if(hourHand.transform.rotation.z >= 90)
+		if(hourHand.transform.rotation.eulerAngles.z > 90)
 		{
+			minuteHand.transform.Rotate(new Vector3(0, 0, -1), ((180 / minutesToEnd) / 60) * Time.deltaTime);
+			hourHand.transform.Rotate(new Vector3(0, 0, -1), ((15 / minutesToEnd) / 60) * Time.deltaTime);
+		}
+		else
+		{
+			minuteHand.transform.eulerAngles = new Vector3(
+			   minuteHand.transform.eulerAngles.x,
+			   minuteHand.transform.eulerAngles.y,
+			   90
+		   );
+			hourHand.transform.eulerAngles = new Vector3(
+				minuteHand.transform.eulerAngles.x,
+				minuteHand.transform.eulerAngles.y,
+				-270
+			);
 			anim.SetTrigger("FadeOut");
 		}
 	}	
