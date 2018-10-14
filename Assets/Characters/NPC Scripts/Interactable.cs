@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Interactable : MonoBehaviour {
+	public bool isPerson = false;
 	public bool interacting = false;
 	public string interaction_string;
 	public Sprite portrait;
