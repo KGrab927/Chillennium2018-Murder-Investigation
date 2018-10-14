@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ZIndexScriptAdder : MonoBehaviour {
 	void Start () {
-		foreach (Transform child in transform)
-		{
-			child.AddComponent<ZIndexFixer>();
-		}
+		//foreach (Transform child in transform)
+		//{
+	//		child.AddComponent<ZIndexFixer>();
+		//}
 	}
 }
