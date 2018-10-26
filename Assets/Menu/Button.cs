@@ -12,7 +12,7 @@ public class Button : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetMouseButtonDown(0)) {
-			UnityEngine.SceneManagement.SceneManager.LoadScene("main");
+			UnityEngine.SceneManagement.SceneManager.LoadScene("Opening");
 		}
 	}
 }

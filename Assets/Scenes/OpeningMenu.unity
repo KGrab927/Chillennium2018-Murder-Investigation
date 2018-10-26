@@ -395,7 +395,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.01001, y: 0.00019836}
-  m_SizeDelta: {x: 1980, y: 927.91}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &212635538
 MonoBehaviour:
@@ -444,8 +444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 1418775266}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 212635540}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
@@ -473,17 +473,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 18261514}
         m_MethodName: exitOnExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18261514}
-        m_MethodName: playClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1106,8 +1095,8 @@ GameObject:
   - component: {fileID: 1418775262}
   - component: {fileID: 1418775264}
   - component: {fileID: 1418775263}
-  - component: {fileID: 1418775265}
   - component: {fileID: 1418775266}
+  - component: {fileID: 1418775265}
   m_Layer: 5
   m_Name: Play_N
   m_TagString: Untagged
@@ -1130,8 +1119,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 0.0024167}
-  m_SizeDelta: {x: 1980, y: 922.74}
+  m_AnchoredPosition: {x: 0.000030518, y: 0}
+  m_SizeDelta: {x: 1980, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1418775263
 MonoBehaviour:
@@ -1175,7 +1164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1418775261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a6a7dc70931a36418f9739c0ac2b976, type: 3}
+  m_Script: {fileID: 11500000, guid: b4506a22286fc7d40a4e35c87a065041, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1418775266
@@ -1192,7 +1181,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 212635540}
+    m_SelectOnDown: {fileID: 1418775266}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
@@ -1217,29 +1206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1418775263}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 18261514}
-        m_MethodName: loadSceneOnPlay
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 18261514}
-        m_MethodName: playClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1453837714

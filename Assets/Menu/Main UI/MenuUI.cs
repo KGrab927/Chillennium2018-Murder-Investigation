@@ -37,9 +37,7 @@ public class MenuUI : MonoBehaviour
 
 
     }
-
-
-
+    
     public void loadSceneOnPlay()
     {
         SceneManager.LoadScene("Opening", LoadSceneMode.Single);
@@ -75,6 +73,5 @@ public class MenuUI : MonoBehaviour
     {
         playerSelSource.clip = playerSelect;
         playerSelSource.Play();
-
     }
 }
